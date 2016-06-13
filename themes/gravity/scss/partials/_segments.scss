@@ -1,0 +1,194 @@
+// Todo
+// Align height of h3 in Gilly's segment with h2
+// Courses has double row margins when shrinking :()
+
+// Segment Classes
+
+.purple {
+  background-color: $purple;
+  color: $white;
+}
+
+.light-purple {
+  background-color: $light-purple;
+}
+
+.teal {
+  background-color: $teal;
+  color: $white;
+}
+
+.light-teal {
+  background-color: $light-teal;
+}
+
+/*.purple::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 250px;
+
+  background-color: $purple;
+  z-index: -1;
+}*/
+
+// Introduction segment
+
+#newton {
+/*@include horizontal-center;*/
+margin: 0 auto;
+@include retina-image(510px, 250px, newton-small-illustration, small);
+@include retina-image(675px, 350px, newton-medium-illustration, medium);
+@include retina-image(950px, 490px, newton-large-illustration, large);
+}
+
+#introduction {
+  overflow: hidden;
+
+  h1 {
+    @include gap(top, small);
+  }
+  .button {
+    margin-top: $gap-tiny;
+    margin-bottom: $gap-medium;
+  }
+}
+
+// Two button spacing
+@include breakpoint(medium) {
+  .button + .button {
+    margin-left: $gap-small;
+  }
+}
+@include breakpoint(large) {
+  .button + .button {
+    margin-left: 0;
+  }
+}
+
+#gilly {
+  @include gap(both, large);
+  .gillyphoto {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin-bottom: $gap-small;
+    border-radius: 50%;
+    border: 4px solid $light-teal;
+    background: url(/user/themes/gravity/images/common/gilly.png) no-repeat;
+  }
+  h3 {
+    padding-top: 11px;
+  }
+}
+
+#clients {
+  @include gap(both, large);
+}
+
+// Browse Courses Segment
+
+#browsecourses {
+  @include gap(both, large);
+  ul {
+      display: block;
+      width: 100%;
+      @include gap(bottom, medium);
+  }
+  .button {
+    background-color: $teal;
+    border-color: $white;
+    &:hover {
+      color: $teal;
+      background-color: $white;
+      border-color: $light-teal;
+    }
+
+  }
+  li {
+    display: inline-block;
+    float: none;
+
+    &.is-active .button {
+    color: $teal;
+    background-color: $light-teal;
+      &:hover {
+        border-color: $white;
+      }
+    }
+    @include breakpoint(medium) {
+      &:not(:last-child) {
+        @include gap(right, medium);
+      }
+    }
+  }
+}
+
+// Courses Segment
+
+#courses {
+  h4 {
+    color: inherit;
+    /*font-weight: bold;*/
+  }
+  img {
+    @include gap(both, small);
+  }
+  td {
+    font-size: $global-font-size / 1.15;
+  }
+  thead { // Hacks because Firefox doesn't show rounded corners otherwise!
+    display: inline-table;
+    width: 100%;
+    @include border-top-radius(10px);
+  }
+  th {
+    @include border-top-radius(10px);
+    /*div span:first-child {
+      color: $white;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    &::before {
+      content: attr(data-training-days);
+      background-color: $purple;
+      color: $white;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    img::before {
+      content: "test";
+      color: red;
+      display: block;
+      positon: relative;
+      top: -40;
+      background-color: pink;
+    }*/
+  }
+  tfoot { // Last td cell for button
+    background-color: transparent;
+    padding: 0;
+    td {
+      padding: 0;
+    }
+  }
+  tbody tr:not(:first-child) td {
+    text-align: center;
+    font-weight: bold;
+  }
+  .button {
+    width: 100%;
+    @include gap(both, small);
+    @include border-top-radius(0);
+    @include border-bottom-radius(10px);
+  }
+}
+
+.course-container {
+  margin-top: -75px;
+}

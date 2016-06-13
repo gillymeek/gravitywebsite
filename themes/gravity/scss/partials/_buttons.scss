@@ -1,0 +1,27 @@
+// Button overrides
+
+// Note: There are specific button overrides in the Browse Courses segment.
+
+.button {
+  border-width: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover {
+    /*border-color: $pink !important;*/
+  }
+}
+
+.button:not(.secondary) {
+  border-color: $dark-pink;
+}
+
+.button + .secondary {
+  color: $teal;
+  border-color: $light-teal;
+  background-color: $white;
+  &:hover {
+    color: $teal;
+    border-color: $teal;
+    background-color: $light-teal;
+  }
+}

@@ -1,0 +1,19 @@
+// Exceptions for dark coloured segments.
+
+h1, h2, h3, h4, h5 {
+  .purple &, .teal & {
+    color: $cream;
+  }
+}
+
+// Quotation
+blockquote p {
+  font-size: rem-calc(14);
+  font-weight: bold;
+}
+cite {
+  font-family: $header-font-family;
+  font-style: normal;
+}
+
+// Headings

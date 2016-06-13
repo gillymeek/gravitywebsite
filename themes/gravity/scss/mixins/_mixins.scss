@@ -1,0 +1,80 @@
+// Mixin to combine Foundation breakpoints with retina recognition for background images.
+// Issues. Issues with default code that works with Foundation, in Chrome and Firefox, it doesn't like the media query structure, specifically the comma that seperates the resolution check from the size width, instead, both the width and resolution checks must be combined into a single statement, then divided by a comma for each variation
+@mixin retina-image($retina-width, $retina-height, $retina-image, $retina-mediaquery: medium, $retina-image-folder: "/user/themes/gravity/images/illustrations/", $retina-filetype: ".png") {
+  // If you change the default breakpoints, these too also need to change!
+  $retina-medium-query: "min-width: 40em";
+  $retina-large-query: "min-width: 64em";
+  @if $retina-mediaquery == "small" {
+      width: $retina-width;
+      height: $retina-height;
+      background-image: url(quote(unquote($retina-image-folder + $retina-image + "@2x" + $retina-filetype)));
+      background-size: $retina-width $retina-height;
+  }
+  @if $retina-mediaquery == "medium" {
+    @media only screen and ($retina-medium-query) {
+      width: $retina-width;
+      height: $retina-height;
+      background-image: url(quote(unquote($retina-image-folder + $retina-image + $retina-filetype)));
+      background-size: $retina-width $retina-height;
+    }
+    @media only screen and ($retina-medium-query) and (-webkit-min-device-pixel-ratio: 2), ($retina-medium-query) and (min-resolution: 192dpi) {
+      background-image: url(quote(unquote($retina-image-folder + $retina-image + "@2x" + $retina-filetype)));
+    }
+  }
+  @if $retina-mediaquery == "large" {
+    @media only screen and ($retina-large-query) {
+      width: $retina-width;
+      height: $retina-height;
+      background-image: url(quote(unquote($retina-image-folder + $retina-image + $retina-filetype)));
+      background-size: $retina-width $retina-height;
+    }
+    @media only screen and ($retina-large-query) and (-webkit-min-device-pixel-ratio: 2), ($retina-large-query) and (min-resolution: 192dpi) {
+      background-image: url(quote(unquote($retina-image-folder + $retina-image + "@2x" + $retina-filetype)));
+    }
+  }
+}
+
+// Gap Mixin
+// Gap distances set in base/_variables
+
+@mixin gap($gap-type: "both", $gap-distance: "medium") {
+	@if $gap-distance == "xxlarge" {
+		$gap-distance: $gap-xxlarge;
+	}
+	@if $gap-distance == "xlarge" {
+		$gap-distance: $gap-xlarge;
+	}
+	@if $gap-distance == "large" {
+		$gap-distance: $gap-large;
+	}
+	@if $gap-distance == "medium" {
+		$gap-distance: $gap-medium;
+	}
+	@if $gap-distance == "small" {
+		$gap-distance: $gap-small;
+	}
+	@if $gap-distance == "tiny" {
+		$gap-distance: $gap-tiny;
+	}
+	@if $gap-type == "both" {
+		@include padding($gap-distance null $gap-distance null);
+	}
+	@if $gap-type == "top" {
+		@include padding($gap-distance null null null);
+	}
+	@if $gap-type == "bottom" {
+		@include padding(null null $gap-distance null);
+	}
+	@if $gap-type == "sides" {
+		@include padding(null $gap-distance null $gap-distance);
+	}
+	@if $gap-type == "left" {
+		@include padding(null null null $gap-distance);
+	}
+	@if $gap-type == "right" {
+		@include padding(null $gap-distance null null);
+	}
+	@if $gap-type == "all" {
+		@include padding($gap-distance $gap-distance $gap-distance $gap-distance);
+	}
+}

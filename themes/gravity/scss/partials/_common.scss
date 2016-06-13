@@ -1,0 +1,35 @@
+// Heading Underline Effect
+
+h1::after, h2::after, h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 6px;
+  margin: $gap-small auto $gap-small auto;
+  border-radius: 2px;
+  background-color: $light-teal;
+}
+
+h3::after {
+  width: 50px;
+}
+
+.underline-left::after {
+  @include breakpoint(medium) {
+          margin: $gap-small 0 $gap-small 0;
+  }
+}
+
+
+// ---
+
+// Won't truly work properly in other browsers by default, have to manually hack in the retina breakpoints. Pain! Mixin if needed.
+/*.test {
+  background-color: red;
+  @media screen and #{breakpoint(medium)} {
+    background-color: green;
+  }
+  @media screen and #{breakpoint(medium)} and #{breakpoint(retina)} {
+    background-color: yellow;
+  }
+}*/

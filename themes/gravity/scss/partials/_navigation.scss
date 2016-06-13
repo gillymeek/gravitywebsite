@@ -1,0 +1,54 @@
+// Force Top Bar into Fixed width, but keep full bar colour
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: map-get($foundation-palette, secondary);
+  img { // Defaults to logo unless other img tag added
+    width: 24px;
+    height: 32px;
+    margin-right: 6px;
+    position: relative;
+    top: 3px;
+  }
+  .top-bar-title {
+    font-family: $logo-font-family;
+    font-weight: bold;
+    font-size: 26px;
+    span {
+      display: inline-block;
+      position: relative;
+      top: 7px;
+    }
+  }
+  @include breakpoint(medium) {
+    height: 100px;
+    img {
+      width: 34px;
+      height: 48px;
+    }
+    .top-bar-title {
+      font-size: 32px;
+      margin-top: 16px;
+      span {
+        top: 10px;
+      }
+    }
+  }
+}
+
+
+.top-bar-right {
+  font-weight: bold;
+  margin-top: 37px;
+}
+
+.top-bar {
+  height: 50px;
+  @include breakpoint(medium) {
+    height: 100px;
+  }
+  /*background-color: transparent;*/
+  a {
+    color: $dark-purple;
+  }
+}

@@ -1,305 +1,534 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gravity 1.0</title>
-    <link rel="stylesheet" href="/user/themes/gravity/css/app.css">
-  </head>
-  <body>
-    <nav>
+{% extends 'partials/gravity.html.twig' %}
+
+{% block content %}
+  {#{{ page.content }}#}
+    <section id="introduction">
       <div class="row">
         <div class="large-12 columns">
-          <ul class="menu">
-            <li><a href="#"><h2>Gravity</h2></a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="https://pathfinderagency.typeform.com/to/LBW6z7" class="typeform-share link" data-mode="2" target="_blank">Contact Us</a></li>
-          </ul>
+          <div id="newton"></div>
+          <h1 class="text-center">Management Training that is full of bright ideas</h1>
         </div>
       </div>
-    </nav>
-<hr>
-    <section class="row">
-      <div class="large-8 columns">
-        <h1>Effective training courses to realise your businesses potential</h1>
-        <p>We offer in-house Management and Communication skills training courses and programmes that accelerate performance. We will work closely with you and your organisation to deliver pragmatic, relevant and impactful training. </p>
-      </div>
-      <div class="large-4 columns">
-        <a href="#" class="button float-center">Simple Button</a>
+      <div class="row">
+        <div class="large-6 large-offset-1 medium-12 large-text-left text-center columns">
+          <p>We deliver in-house training courses and partner with you to select or design the right training for your organisation.</p>
+        </div>
+        <div class="large-5 medium-12 large-text-left text-center columns">
+          <a href="#browsecourses" class="button">Browse the courses</a>
+          <a href="#" class="button secondary">Discuss your needs</a>
+        </div>
       </div>
     </section>
-    <hr>
-    <section class="row">
-      <div class="large-8 columns">
-        <div class="large-4 columns"><img src="/user/themes/gravity/images/gilly-photo-placeholder.png" alt="Gilly Meek photograph"></div>
-        <div class="large-8 columns">
-          <h2>Hello, I'm Gilly Meek</h2>
-          <p>I started Gravity in 2008 and have been training and coaching for 13 years. I managed the training for Global radio, the UK’s largest radio company and have spent time living and training in Vietnam.  I have trained people from over 100 different organisations ranging from media, retail, finance, legal to hospitality, xxxx and xxxx</p>
+
+    <section class="purple" id="gilly">
+      <div class="row align-middle">
+        <div class="large-3 medium-4 columns text-center"><div class="gillyphoto"></div></div>
+        <div class="large-6 medium-8 medium-text-left text-center columns">
+          <h2 class="underline-left">Hello, I'm Gilly Meek</h2>
+          <p>I started Gravity in 2008 and have <b>been training and coaching</b> for <a href="http://linkedin.com">13 years</a>. I managed the training for Global radio, the UK’s largest radio company and have spent time living and training in Vietnam.  I have trained people from over 100 different organisations ranging from media, retail, finance, legal to hospitality.</p>
+          <p>I have trained people from over 100 different organisations ranging from media</p>
         </div>
-      </div>
-      <div class="large-4 columns">
-        <h3>Social Media Feed</h3>
-        <ul>
-          <li>News Item</li>
-          <li>News Item</li>
-          <li>News Item</li>
-        </ul>
+        <div class="large-3 medium-8 medium-text-left text-center columns">
+          <h3 class="underline-left">Recommendations</h3>
+          <blockquote><p>&#8220;Gravity is the number one reason that we have been able to retain some key members of staff and get them to perform at their best.&#8221;</p><cite><strong>Diana Baker</strong>, Operations Director, The Light Rooms</cite></blockquote>
+        </div>
       </div>
     </section>
-    <hr>
-    <section class="row">
-      <div class="columns text-center">
-        <h2>Our clients</h2>
-        <span class="secondary label">Topman</span>
-        <span class="secondary label">Arcadia</span>
-        <span class="secondary label">Pizza Hut</span>
-        <span class="secondary label">Hackett</span>
-        <span class="secondary label">First Nine Catering</span>
-        <span class="secondary label">Trevor Sorbie Salons</span>
+
+    <section class="light-purple" id="clients">
+      <div class="row">
+        <div class="columns text-center">
+          <span class="secondary label">Topman</span>
+          <span class="secondary label">Arcadia</span>
+          <span class="secondary label">Pizza Hut</span>
+          <span class="secondary label">Hackett</span>
+          <span class="secondary label">First Nine Catering</span>
+          <span class="secondary label">Trevor Sorbie Salons</span>
+        </div>
       </div>
     </section>
-    <hr>
 
-    <section class="row">
-      <div class="large-12 columns">
-      <ul class="tabs" data-tabs id="course-tabs">
-        <li class="tabs-title is-active"><a href="#overview" aria-selected="true">Overview of our training</a></li>
-        <li class="tabs-title"><a href="#panel2">Social Skills Courses</a></li>
-        <li class="tabs-title"><a href="#panel3">Training courses 2</a></li>
-        <li class="tabs-title"><a href="#panel4">Training courses 3</a></li>
+    <section>
+      <div class="teal" id="browsecourses">
+        <div class="row">
+          <div data-tabs class="large-12 columns">
+            <h2 class="text-center">Browse our training courses</h2>
 
-        <li class="tabs-title"><a href="#panel5">Bespoke Training</a></li>
-      </ul>
-
-
-      <div class="tabs-content" data-tabs-content="course-tabs">
-        <div class="tabs-panel is-active" id="overview">
-          <h3>A training course for every need</h3>
-          <p>I’m sure we can come up with a better title, but it could also be quite simple. This paragraph acts as a lead in. It gives you the chance to talk more about the courses overall, and could appear on the first tab below instead of here. But the tabs will contain the course breakdowns.</p>
-          <p>Our philosophy is quite simple- we give you the formula to success, a set of tools and an environment to practice in and get 121 feedback. We then get you to turn this into tangible actions you can implement straight after the training course.</p>
-					<h3>Our approach</h3>
-					<ul>
-						<li>Deliver: Formula</li>
-						<li>Demonstrate: Give example</li>
-						<li>Do: You have a go</li>
-						<li>Debrief; feedback and discssions</li>
-						<li>Decide: what action you will take</li>
-					</ul>
-				</div>
-        <div class="tabs-panel" id="panel2">
-
-          <section class="row">
-            <div class="large-12 columns">
-              <h3>Improve your social skills</h3>
-              <p>A simple statement introducing these courses</p>
-            </div>
-            <div class="large-4 columns">
-              <table>
-                <thead>
-                  <tr>
-                    <th class="text-center"><img src="/user/themes/gravity/images/tree1.png" alt="Tree"></th>
-                  </tr>
-                  <tr>
-                    <th class="text-center">Presentation Skills</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>This 2-day presentation skills training course will transform the way you present. You will leave the training course with a boost of confidence, a presentation framework and a voice and body-language that will inspire many!</td>
-                  </tr>
-                  <tr>
-                    <td>Overcoming nerves</td>
-                  </tr>
-                  <tr>
-                    <td>Presentation structure &amp; clarity</td>
-                  </tr>
-                  <tr>
-                    <td>Opening and closing a presentation</td>
-                  </tr>
-									<tr>
-										<td>Audience interaction</td>
-									</tr>
-									<tr>
-										<td>Handling questions</td>
-									</tr>
-									<tr>
-										<td>Voice techniques</td>
-									</tr>
-									<tr>
-										<td>Powerful body-language</td>
-									</tr>
-									<tr>
-										<td>Visual media</td>
-									</tr>
-                  <tr>
-                    <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="large-4 columns">
-              <table>
-                <thead>
-                  <tr>
-                    <th class="text-center"><img src="/user/themes/gravity/images/tree2.png" alt="Tree"></th>
-                  </tr>
-                  <tr>
-                    <th class="text-center">Impact and Influence</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>This 1-day Impact & Influence training course will help you to do yourself justice. You may be a great at your job but do you know how to have impact when you communicate Do you influence those around you? This Impact and Influence training course will show you how to:</td>
-                  </tr>
-                  <tr>
-                    <td>Gain self-belief</td>
-                  </tr>
-                  <tr>
-                    <td>Remove barriers to being impactful</td>
-                  </tr>
-                  <tr>
-                    <td>Influence different personalities</td>
-                  </tr>
-									<tr>
-										<td>Create instant impact</td>
-									</tr>
-									<tr>
-										<td>Sell your ideas</td>
-									</tr>
-									<tr>
-										<td>Use your voice for impact</td>
-									</tr>
-									<tr>
-										<td>Overcome objections</td>
-									</tr>
-                  <tr>
-                    <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="large-4 columns">
-              <table>
-                <thead>
-                  <tr>
-                    <th class="text-center"><img src="/user/themes/gravity/images/tree3.png" alt="Tree"></th>
-                  </tr>
-                  <tr>
-                    <th class="text-center">Negotiation Skills</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>This 2-day Negotiation skills training course will give you all the tools you need to get what you want from your negotiations and at the some time build strong relationships with the other “party” – yes this is possible and we will show you how!</td>
-                  </tr>
-                  <tr>
-                    <td>Achieve win-win solutions</td>
-                  </tr>
-                  <tr>
-                    <td>Plan for a negotiation</td>
-                  </tr>
-                  <tr>
-                    <td>Structuring the negotiation conversation</td>
-                  </tr>
-									<tr>
-										<td>Setting the tone</td>
-									</tr>
-									<tr>
-										<td>Understanding the other person</td>
-									</tr>
-									<tr>
-										<td>Tips and Tricks to get the best result</td>
-									</tr>
-									<tr>
-										<td>How to close</td>
-									</tr>
-									<tr>
-										<td>Managing buyer’s tactics</td>
-									</tr>
-                  <tr>
-                    <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
-        <div class="tabs-panel" id="panel3">
-          <p>three</p>
-          <p>Check me out! I'm a super cool Tab panel with text content!</p>
-        </div>
-        <div class="tabs-panel" id="panel4">
-          <p>four</p>
-        </div>
-        <div class="tabs-panel" id="panel5">
-          <p>five</p>
+            <ul class="tabs text-center" data-tabs id="course-tabs">
+              <li class="tabs-title is-active" aria-selected="true"><a class="button" href="#communication-skills">Communication Skills</a></li>
+              <li class="tabs-title"><a class="button" href="#time-management">Time and Meeting Management</a></li>
+              <li class="tabs-title"><a class="button" href="#leadership-training">Leadership and Management</a></li>
+              <li class="tabs-title"><a class="button" href="#bespoke-training">Bespoke Training</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-  </section>
-<hr>
+      <div class="" id="courses">
+        <div class="tabs-content light-teal" data-tabs-content="course-tabs">
+          <div class="tabs-panel is-active" id="communication-skills">
+            <section class="row course-container">
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/presentation-skills.png, small], [/user/themes/gravity/images/illustrations/presentation-skills@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Presentation Skills</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Presentation Skills Training Course will transform the way you present. You will leave the training course with a boost of confidence, a presentation framework and a voice and body-language that will inspire many!</td>
+                    </tr>
+                    <tr>
+                      <td>Overcome your nerves</td>
+                    </tr>
+                    <tr>
+                      <td>Engage &amp; interact with your audience</td>
+                    </tr>
+                    <tr>
+                      <td>Deliver a structured &amp; clear presentation</td>
+                    </tr>
+                    <tr>
+                      <td>Use powerful voice &amp; body-language</td>
+                    </tr>
+                    <tr>
+                      <td>Handle difficult questions</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/impact-and-influence.png, small], [/user/themes/gravity/images/illustrations/impact-and-influence@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Impact and Influence</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Impact and Influence Training Course will help you to do yourself justice in all your communications so that you get the results you want. We will give you all the secrets of influencing and enable you to gain instant impact and credibility.</td>
+                    </tr>
+                    <tr>
+                      <td>Gain a mindset to enable success</td>
+                    </tr>
+                    <tr>
+                      <td>Influence different personalities</td>
+                    </tr>
+                    <tr>
+                      <td>Create instant impact</td>
+                    </tr>
+                    <tr>
+                      <td>Sell your ideas</td>
+                    </tr>
+                    <tr>
+                      <td>Overcome objections</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/negotiation-skills.png, small], [/user/themes/gravity/images/illustrations/negotiation-skills@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Negotiation Skills</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Negotiation Skills Training Course will give you all the tools you need to get what you want from your negotiations whilst building strong relationships with the other “party” – yes this is possible and we will show you how.</td>
+                    </tr>
+                    <tr>
+                      <td>Achieve win-win outcomes</td>
+                    </tr>
+                    <tr>
+                      <td>Plan for negotiations</td>
+                    </tr>
+                    <tr>
+                      <td>Use trading tricks to get the best result</td>
+                    </tr>
+                    <tr>
+                      <td>Close with confidence</td>
+                    </tr>
+  									<tr>
+  										<td>Manage buyer’s tactics</td>
+  									</tr>
 
-  <section id="form" class="row">
-    <div class="large-12 columns">
-      <!-- Script eeds moving -->
-      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-    </div>
-  </section>
-  <hr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div class="tabs-panel" id="time-management">
+            <section class="row course-container">
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/time-management.png, small], [/user/themes/gravity/images/illustrations/time-management@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Time Management</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Time Management Training Course will give you some very simple tools that will transform your ability to manage your time and others’ expectations.  This will lead to better results for you and a far less stressful day.</td>
+                    </tr>
+                    <tr>
+                      <td>Plan your workload effectively</td>
+                    </tr>
+                    <tr>
+                      <td>Prioritise tasks &amp; meet deadlines/td>
+                    </tr>
+                    <tr>
+                      <td>Say no in a helpful way</td>
+                    </tr>
+                    <tr>
+                      <td>Overcome procrastination</td>
+                    </tr>
+                    <tr>
+                      <td>Manage interruptions</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/running-effective-meetings.png, small], [/user/themes/gravity/images/illustrations/running-effective-meetings@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Running Effective Meetings</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Running Effective Meetings training course will enable you to run shorter meetings that always have a clear output. It will also give you some vital tools to help you keep your meetings focused and improve input from meeting attendees.</td>
+                    </tr>
+                    <tr>
+                      <td>Write an effective meeting agenda</td>
+                    </tr>
+                    <tr>
+                      <td>Plan clear defined meeting outcomes</td>
+                    </tr>
+                    <tr>
+                      <td>Keep meetings running on time &amp; on topic</td>
+                    </tr>
+                    <tr>
+                      <td>Become an effective meeting facilitator</td>
+                    </tr>
+                    <tr>
+                      <td>Manage challenging attendees</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/six-hats.png, small], [/user/themes/gravity/images/illustrations/six-hats@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Six Thinking Hats</h4>
+                      </th
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Six Thinking Hats Training Course provides a framework for group and individual decision-making, problem solving and idea generation. It is a powerful tool to speed up your meetings and by the end of this Six Thinking Hats Training you will be able to:</td>
+                    </tr>
+                    <tr>
+                      <td>Eliminate argument &amp; repetition in meetings</td>
+                    </tr>
+                    <tr>
+                      <td>Make quicker &amp; better group decisions</td>
+                    </tr>
+                    <tr>
+                      <td>Create a clear meeting focus &amp; process</td>
+                    </tr>
+                    <tr>
+                      <td>Apply all types of thinking to a challenge</td>
+                    </tr>
+  									<tr>
+  										<td>Generate new &amp; creative ideas quickly</td>
+  									</tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div class="tabs-panel" id="leadership-training">
+            <section class="row course-container">
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/management-fundamentals.png, small], [/user/themes/gravity/images/illustrations/management-fundamentals@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Management Fundamentals</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Management training course will give you a complete guide to managing people whether you're a complete beginner or an experienced Manager. It shows you what and how and is filled with tools, tips and practice. By the end of the Management Fundamentals training course you will be able to:</td>
+                    </tr>
+                    <tr>
+                      <td>Manage different &amp; difficult personalises</td>
+                    </tr>
+                    <tr>
+                      <td>Motivate your team to increase performance</td>
+                    </tr>
+                    <tr>
+                      <td>Give positive &amp; constructive feedback</td>
+                    </tr>
+                    <tr>
+                      <td>Delegate, set clear goals &amp; run effective 121s</td>
+                    </tr>
+                    <tr>
+                      <td>Use Coaching to develop individuals</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/coaching-skills.png, small], [/user/themes/gravity/images/illustrations/coaching-skills@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Coaching Skills</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our Coaching Skills training course will fully equip you to have structured Coaching sessions with colleagues and use coaching language in less formal settings. I am proud to have trained on 2 of the UK"s leading Coaching Accreditations, so you can rest assured you will be getting the best in-house training course available.</td>
+                    </tr>
+                    <tr>
+                      <td>A framework for Coaching conversations</td>
+                    </tr>
+                    <tr>
+                      <td>Improved listening &amp; questioning skills</td>
+                    </tr>
+                    <tr>
+                      <td>The ability to help people find solutions</td>
+                    </tr>
+                    <tr>
+                      <td>Tools to improve performance</td>
+                    </tr>
+                    <tr>
+                      <td>Real experience of running Coaching sessions</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/social-styles.png, small], [/user/themes/gravity/images/illustrations/social-styles@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Social Styles for Managers</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Social Styles is the world's leading behavioural style model. The 4 styles display positive & negative traits when working with others. By understanding styles you will be able to improve your communications, build relationships and reduce conflict. This Social Styles training course includes:</td>
+                    </tr>
+                    <tr>
+                      <td>A Social Styles Profile report- self and others’ assessment</td>
+                    </tr>
+                    <tr>
+                      <td>A versatility score &amp; report</td>
+                    </tr>
+                    <tr>
+                      <td>Guidance on how to quickly assess other's style</td>
+                    </tr>
+                    <tr>
+                      <td>Tools to help you communicate, work with &amp; manage other styles</td>
+                    </tr>
+  									<tr>
+  										<td>Practice in adapting to every style</td>
+  									</tr>
 
-  <section id="events" class="row">
-    <div class="large-12 columns">
-      <h4>Quarterly Events Segment, need further information</h4>
-      <p>This will appear higher up the page when needed, I've just placed it here for now and it won't appear at times of year you don't want it too</p>
-    </div>
-  </section>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div class="tabs-panel" id="bespoke-training">
+            <section class="row course-container">
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/bespoke-training.png, small], [/user/themes/gravity/images/illustrations/bespoke-training@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Bespoke Training Courses</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>We design fully bespoke training courses for clients. This can be anything from a 1 day bespoke workshop through to a 1-year Modular Leadership Development Programme consisting of 12 days training and 121 Coaching.</td>
+                    </tr>
+                    <tr>
+                      <td>Leadership development programmes</td>
+                    </tr>
+                    <tr>
+                      <td>Business &amp; sector specific workshops</td>
+                    </tr>
+                    <tr>
+                      <td>Apprentice style learning programmes</td>
+                    </tr>
+                    <tr>
+                      <td>Customisation of any of our core workshops</td>
+                    </tr>
+                    <tr>
+                      <td>Team building initiatives</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/121.png, small], [/user/themes/gravity/images/illustrations/121@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>121 Coaching</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Our 121 Coaching offers a highly focused and open environment for you to work on any aspect of your development. The 121 sessions will be suited entirely to your needs and will lead to rapid progress and powerful results.</td>
+                    </tr>
+                    <tr>
+                      <td>Set &amp; achieve development goals</td>
+                    </tr>
+                    <tr>
+                      <td>Gain invaluable insight</td>
+                    </tr>
+                    <tr>
+                      <td>Be challenged to think of ideas &amp; solutions</td>
+                    </tr>
+                    <tr>
+                      <td>Learn how to self-motivate</td>
+                    </tr>
+                    <tr>
+                      <td>Create action plans &amp; accelerate performance</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="large-4 columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-center" data-training-days="2" data-training-days-text="Days">
+                        <img data-interchange="[/user/themes/gravity/images/illustrations/meeting-facilitation.png, small], [/user/themes/gravity/images/illustrations/meeting-facilitation@2x.png, retina]" alt="Presentation Skills Illustration" height="120" width="120">
+                        <h4>Meeting Facilitation</h4>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>We can facilitate meetings for you so that you can concentrate on inputting - we will manage the process and people ensuring you achieve your goals and have everyone on-board. We can also bring a touch of creativity if you wish.</td>
+                    </tr>
+                    <tr>
+                      <td>Creativity sessions to generate new ideas</td>
+                    </tr>
+                    <tr>
+                      <td>Team away days</td>
+                    </tr>
+                    <tr>
+                      <td>Board meetings</td>
+                    </tr>
+                    <tr>
+                      <td>Decision-making meetings</td>
+                    </tr>
+  									<tr>
+  										<td>Strategic Planning meetings</td>
+  									</tr>
 
-<hr>
-
-  <footer class="row">
-    <div class="large-3 medium-6 columns">
-      <h4>Contact us</h4>
-
-    </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Address</h4>
-
-<!--
-Schema is in wrong order and needs some thought       -->
-      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <div itemscope itemtype="http://schema.org/ProfessionalService">
-        Gravity Training and Development Limited<br>
-          <span itemprop="streetAddress">
-            71-75 Shelton Street,<br>
-						Convent Garden,
-          </span>
-          <span itemprop="addressLocality">London</span>.<br>
-          <meta itemprop="addressRegion" content="Greater London">
-          <span itemprop="postalCode">WC2H 9JQ</span>.<br>
-          <span itemprop="addressCountry">United Kingdom</span>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td class="text-center"><a class="typeform-share link button" href="https://pathfinderagency.typeform.com/to/LBW6z7" data-mode="2" target="_blank">Book this course</a></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Favourite books</h4>
-    </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Social media</h4>
-    </div>
-    <div class="row">
-			<!-- delete this hr -->
-			<hr>
-      <div class="large-12 columns">
-        <p>&copy; Copyright Gravity Training and Development Limited {{ "now"|date("Y") }} <a href="#">Our Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-
-    <script src="/user/themes/gravity/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/user/themes/gravity/bower_components/what-input/what-input.js"></script>
-    <script src="/user/themes/gravity/bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="/user/themes/gravity/js/min/app-min.js"></script>
-  </body>
-</html>
+    </section>
+{% endblock %}

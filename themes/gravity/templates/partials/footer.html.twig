@@ -1,0 +1,38 @@
+<footer class="">
+  <div class="row">
+    <div class="large-3 medium-6 columns">
+      <h4>Contact us</h4>
+
+    </div>
+    <div class="large-3 medium-6 columns">
+      <h4>Address</h4>
+
+<!--
+Schema is in wrong order and needs some thought       -->
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <div itemscope itemtype="http://schema.org/ProfessionalService">
+        Gravity Training and Development Limited<br>
+          <span itemprop="streetAddress">
+            71-75 Shelton Street,<br>
+            Convent Garden,
+          </span>
+          <span itemprop="addressLocality">London</span>.<br>
+          <meta itemprop="addressRegion" content="Greater London">
+          <span itemprop="postalCode">WC2H 9JQ</span>.<br>
+          <span itemprop="addressCountry">United Kingdom</span>
+        </div>
+      </div>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <h4>Favourite books</h4>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <h4>Social media</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <p>&copy; Copyright Gravity Training and Development Limited {{ "now"|date("Y") }} <a href="#">Our Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

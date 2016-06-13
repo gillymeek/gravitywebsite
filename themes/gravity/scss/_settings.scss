@@ -48,32 +48,50 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$light-purple: #8D829F;
+$purple: #615772;
+$dark-purple: #433C4F;
+$light-teal: #A8EDE6;
+$teal: #01A2A6;
+$pink: #F38181;
+$dark-pink: #EF5959;
 $foundation-palette: (
-  primary: #2199e8,
-  secondary: #777,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #ec5840,
+  primary: $teal,
+  secondary: $light-teal,
+  success: $teal,
+  warning: $dark-pink,
+  alert: $pink,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #FDFFF7; // Not true white, slightly cream
+$cream: #FEFBEC; // The light cream, nearly white but not as white as white. All white?
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $dark-purple;
+$body-font-family: 'fs', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 5px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
+
+// 1.1 Bespoke settings for project
+
+// Simple Padding Declarations
+$gap-xxlarge: 240px;
+$gap-xlarge: $gap-xxlarge / 2;
+$gap-large: $gap-xlarge / 2;
+$gap-medium: $gap-large / 2;
+$gap-small: $gap-medium / 2;
+$gap-tiny: $gap-small / 2;
 
 // 2. Breakpoints
 // --------------
@@ -102,7 +120,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'arvo', ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
+$logo-font-family: 'gravity', 'fs', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -116,15 +135,23 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
+    'h1': 30, // Was 48
+    'h2': 28,
+    'h3': 20,
+    'h4': 22,
+    'h5': 20,
+    'h6': 16,
+  ),
+  large: ( // Added to create more distinction between sizes
+    'h1': 36, // Was 48
+    'h2': 28,
+    'h3': 20,
+    'h4': 22,
     'h5': 20,
     'h6': 16,
   ),
 );
-$header-color: inherit;
+$header-color: $teal; // Was inherit
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
@@ -155,11 +182,11 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $dark-gray;
-$blockquote-padding: rem-calc(9 20 0 19);
-$blockquote-border: 1px solid $medium-gray;
+$blockquote-color: $white;
+$blockquote-padding: 0; // was rem-calc(9 20 0 19)
+$blockquote-border: 0 solid $medium-gray;
 $cite-font-size: rem-calc(13);
-$cite-color: $dark-gray;
+$cite-color: $cream;
 $keystroke-font: $font-family-monospace;
 $keystroke-color: $black;
 $keystroke-background: $light-gray;
@@ -233,13 +260,13 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.85em 1em; // Was 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
+$button-background: $pink;
+$button-background-hover: $dark-pink;
+$button-color: $cream;
+$button-color-alt: $cream;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -494,14 +521,14 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: none; // was 1px solid smart-scale($table-background, $table-color-scale);
+$table-padding: rem-calc(15 20 15); // was rem-calc(8 10 10)
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: $cream;// was smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: $cream; // was smart-scale($table-background, $table-color-scale / 2);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-head-font-color: $body-font-color;
 $show-header-for-stacked: false;
@@ -510,16 +537,17 @@ $show-header-for-stacked: false;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-background-active: $light-gray;
-$tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
-$tab-expand-max: 6;
+$tab-background: inherit;
+$tab-background-active: inherit;
+$tab-item-font-size: rem-calc(14); // was 12
+$tab-item-background-hover: inherit;
+$tab-item-padding: 1.25rem 1.5rem; // was 1.25rem 1.5rem
+$tab-expand-max: 6; // was 6;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
-$tab-content-color: foreground($tab-background, $primary-color);
-$tab-content-padding: 1rem;
+$tab-content-border: 0;
+$tab-content-color: $white; // was foreground($tab-background, $primary-color);
+$tab-content-padding: 1rem; // Was 1rem
+
 
 // 33. Thumbnail
 // -------------
@@ -558,8 +586,8 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0rem; // was 0.5
+$topbar-background: $light-teal;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

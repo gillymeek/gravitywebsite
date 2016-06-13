@@ -1,0 +1,35 @@
+{# ***** Gravity Theme Base ***** #}
+{# For minification - renable #}
+{# {% spaceless %} #}
+<!doctype html>
+<html class="no-js" lang="en">
+{% block head %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+{#  <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png"> #}{# need correct url and an actual icon #}
+{#  <link rel="apple-touch-icon" href="apple-touch-icon.png"> #}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity 1.0</title>
+    {% block stylesheets %}
+            <style>{% include 'partials/critical.html.twig' %}</style>
+            {# Custom styles for this theme #}
+            {% do assets.addCss('theme://css/gravity.css', 101) %}
+            {{ assets.css() }}
+    {% endblock %}
+    <!-- <link rel="stylesheet" href="/user/themes/gravity/css/gravity.css"> -->
+  </head>
+{% endblock %}
+  <body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+{% include 'partials/navigation.html.twig' %}
+{% block content %}
+
+{% endblock %}
+        {# {% include 'partials/footer.html.twig' %} #}
+        {% include 'partials/scripts.html.twig' %}
+  </body>
+</html>
+{# {% endspaceless %} #}
