@@ -1,5 +1,17 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "heading";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/l-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/l-semibold.woff2") format("woff2"), url("../fonts/l-semibold.woff") format("woff"), url("../fonts/l-semibold.ttf") format("truetype"), url("../fonts/l-semibold.svg#heading") format("svg"); }
+
+@font-face {
+  font-family: "heading";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/l-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/l-bold.woff2") format("woff2"), url("../fonts/l-bold.woff") format("woff"), url("../fonts/l-bold.ttf") format("truetype"), url("../fonts/l-bold.svg#heading") format("svg"); }
+
+@font-face {
   font-family: 'arvo';
   src: url("../fonts/arvo-bold.eot");
   src: url("../fonts/arvo-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/arvo-bold.woff2") format("woff2"), url("../fonts/arvo-bold.woff") format("woff"), url("../fonts/arvo-bold.ttf") format("truetype");
@@ -1702,7 +1714,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
+  font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
   font-weight: normal;
   font-style: normal;
   color: #01A2A6;
@@ -1739,7 +1751,7 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 1.875rem; }
+    font-size: 2rem; }
   h2 {
     font-size: 1.75rem; }
   h3 {
@@ -1753,13 +1765,13 @@ h6 {
 
 @media screen and (min-width: 64em) {
   h1 {
-    font-size: 2.25rem; }
+    font-size: 2.375rem; }
   h2 {
     font-size: 1.75rem; }
   h3 {
     font-size: 1.25rem; }
   h4 {
-    font-size: 1.375rem; }
+    font-size: 1.5rem; }
   h5 {
     font-size: 1.25rem; }
   h6 {
@@ -1823,7 +1835,7 @@ blockquote {
 cite {
   display: block;
   font-size: 0.8125rem;
-  color: #FEFBEC; }
+  color: #FEFAE5; }
   cite:before {
     content: '\2014 \0020'; }
 
@@ -1973,12 +1985,12 @@ kbd {
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
   background-color: #F38181;
-  color: #FEFBEC; }
+  color: #FEFAE5; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
     background-color: #EF5959;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -1992,34 +2004,34 @@ kbd {
     margin-right: 0; }
   .button.primary {
     background-color: #01A2A6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button.primary:hover, .button.primary:focus {
       background-color: #018285;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.secondary {
     background-color: #A8EDE6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button.secondary:hover, .button.secondary:focus {
       background-color: #65dfd3;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.success {
     background-color: #01A2A6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button.success:hover, .button.success:focus {
       background-color: #018285;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.warning {
     background-color: #EF5959;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button.warning:hover, .button.warning:focus {
       background-color: #e91d1d;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.alert {
     background-color: #F38181;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button.alert:hover, .button.alert:focus {
       background-color: #ed3d3d;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.hollow {
     border: 1px solid #01A2A6;
     color: #01A2A6; }
@@ -2063,7 +2075,7 @@ kbd {
     cursor: not-allowed; }
     .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #F38181;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button.dropdown::after {
     content: '';
     display: block;
@@ -2459,34 +2471,34 @@ select {
         margin-right: -6px; }
   .button-group.primary .button {
     background-color: #01A2A6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button-group.primary .button:hover, .button-group.primary .button:focus {
       background-color: #018285;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button-group.secondary .button {
     background-color: #A8EDE6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button-group.secondary .button:hover, .button-group.secondary .button:focus {
       background-color: #65dfd3;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button-group.success .button {
     background-color: #01A2A6;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button-group.success .button:hover, .button-group.success .button:focus {
       background-color: #018285;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button-group.warning .button {
     background-color: #EF5959;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button-group.warning .button:hover, .button-group.warning .button:focus {
       background-color: #e91d1d;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button-group.alert .button {
     background-color: #F38181;
-    color: #FEFBEC; }
+    color: #FEFAE5; }
     .button-group.alert .button:hover, .button-group.alert .button:focus {
       background-color: #ed3d3d;
-      color: #FEFBEC; }
+      color: #FEFAE5; }
   .button-group.stacked .button, .button-group.stacked-for-small .button, .button-group.stacked-for-medium .button {
     width: 100%; }
     .button-group.stacked .button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-medium .button:last-child {
@@ -3612,7 +3624,7 @@ table {
     padding: 0.9375rem 1.25rem 0.9375rem; }
   table thead,
   table tfoot {
-    background: #FEFBEC;
+    background: #FEFAE5;
     color: #433C4F; }
     table thead tr,
     table tfoot tr {
@@ -3625,7 +3637,7 @@ table {
       font-weight: bold;
       text-align: left; }
   table tbody tr:nth-child(even) {
-    background-color: #FEFBEC; }
+    background-color: #FEFAE5; }
   table tbody th,
   table tbody td {
     padding: 0.9375rem 1.25rem 0.9375rem; }
@@ -4463,14 +4475,14 @@ h3::after {
   }
 }*/
 .purple h1, .teal h1, .purple h2, .teal h2, .purple h3, .teal h3, .purple h4, .teal h4, .purple h5, .teal h5 {
-  color: #FEFBEC; }
+  color: #FEFAE5; }
 
 blockquote p {
   font-size: 0.875rem;
-  font-weight: bold; }
+  /*font-weight: bold;*/ }
 
 cite {
-  font-family: "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
+  font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
   font-style: normal; }
 
 nav {
@@ -4549,6 +4561,9 @@ nav {
 .light-teal {
   background-color: #A8EDE6; }
 
+.cream {
+  background-color: #FEFAE5; }
+
 /*.purple::before {
   content:"";
   position: absolute;
@@ -4616,8 +4631,35 @@ nav {
     padding-top: 11px; }
 
 #clients {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #clients ul {
+    /*li {
+      max-width: 150px;
+    }*/ }
+    @media screen and (min-width: 40em) {
+      #clients ul > li {
+        display: table-cell; } }
+
+#formula {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+#formula-illustration {
+  margin: 0 auto;
+  width: 290px;
+  height: 215px;
+  background-image: url("/user/themes/gravity/images/illustrations/formula-illustration@2x.png");
+  background-size: 290px 215px; }
+  @media only screen and (min-width: 40em) {
+    #formula-illustration {
+      width: 440px;
+      height: 320px;
+      background-image: url("/user/themes/gravity/images/illustrations/formula-illustration-large.png");
+      background-size: 440px 320px; } }
+  @media only screen and (min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi) {
+    #formula-illustration {
+      background-image: url("/user/themes/gravity/images/illustrations/formula-illustration-large@2x.png"); } }
 
 #browsecourses {
   padding-top: 60px;

@@ -22,6 +22,10 @@
   background-color: $light-teal;
 }
 
+.cream {
+  background-color: $cream;
+}
+
 /*.purple::before {
   content:"";
   position: absolute;
@@ -84,7 +88,29 @@ margin: 0 auto;
 }
 
 #clients {
-  @include gap(both, large);
+  @include gap(both, medium);
+  ul { // Set the class vertical in the html on the ul - this code then makes sense. Extra code needed for vertical spacing and horizontal alignment. Because... hey, nothing is easy right?
+    @include breakpoint(medium) {
+      @include menu-direction(horizontal);
+    }
+    /*li {
+      max-width: 150px;
+    }*/
+  }
+}
+
+// Formula
+#formula {
+
+@include gap(both, large)
+
+}
+
+#formula-illustration {
+  margin: 0 auto;
+  @include retina-image(290px, 215px, formula-illustration, small);
+  @include retina-image(440px, 320px, formula-illustration-large, medium);
+
 }
 
 // Browse Courses Segment

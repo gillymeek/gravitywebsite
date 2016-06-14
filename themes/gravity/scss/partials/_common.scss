@@ -14,6 +14,7 @@ h3::after {
   width: 50px;
 }
 
+
 .underline-left::after {
   @include breakpoint(medium) {
           margin: $gap-small 0 $gap-small 0;

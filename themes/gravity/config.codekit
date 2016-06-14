@@ -4063,6 +4063,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/illustrations\/formula-illustration-large.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122232,
+		"inputAbbreviatedPath": "\/images\/illustrations\/formula-illustration-large.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/formula-illustration-large.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/formula-illustration-large@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 287012,
+		"inputAbbreviatedPath": "\/images\/illustrations\/formula-illustration-large@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/formula-illustration-large@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/formula-illustration.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122232,
+		"inputAbbreviatedPath": "\/images\/illustrations\/formula-illustration.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/formula-illustration.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/formula-illustration@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 287012,
+		"inputAbbreviatedPath": "\/images\/illustrations\/formula-illustration@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/formula-illustration@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/illustrations\/impact-and-influence.png": {
 		"fileType": 32768,
 		"ignore": 0,

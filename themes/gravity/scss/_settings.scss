@@ -66,8 +66,8 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #FDFFF7; // Not true white, slightly cream
-$cream: #FEFBEC; // The light cream, nearly white but not as white as white. All white?
+$white: #FDFFF7; // was FDFFF7 Not true white, slightly cream
+$cream: #FEFAE5; // The light cream, nearly white but not as white as white. All white?
 $body-background: $white;
 $body-font-color: $dark-purple;
 $body-font-family: 'fs', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -120,7 +120,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'arvo', ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
+$header-font-family: 'heading', 'arvo', ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
 $logo-font-family: 'gravity', 'fs', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
@@ -135,7 +135,7 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 30, // Was 48
+    'h1': 32, // Was 48
     'h2': 28,
     'h3': 20,
     'h4': 22,
@@ -143,10 +143,10 @@ $header-sizes: (
     'h6': 16,
   ),
   large: ( // Added to create more distinction between sizes
-    'h1': 36, // Was 48
+    'h1': 38, // Was 48, then 36
     'h2': 28,
     'h3': 20,
-    'h4': 22,
+    'h4': 24,
     'h5': 20,
     'h6': 16,
   ),

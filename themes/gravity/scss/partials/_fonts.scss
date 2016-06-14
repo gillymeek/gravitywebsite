@@ -1,5 +1,8 @@
 // Heading fonts
 
+@include font-face("heading", "../fonts/l-semibold", normal);
+@include font-face("heading", "../fonts/l-bold", bold);
+
 @font-face {
     font-family: 'arvo';
     src: url('../fonts/arvo-bold.eot');

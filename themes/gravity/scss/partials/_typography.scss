@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5 {
 // Quotation
 blockquote p {
   font-size: rem-calc(14);
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 cite {
   font-family: $header-font-family;
