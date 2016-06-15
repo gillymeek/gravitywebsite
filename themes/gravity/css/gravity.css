@@ -4475,7 +4475,7 @@ h3::after {
   }
 }*/
 .purple h1, .teal h1, .purple h2, .teal h2, .purple h3, .teal h3, .purple h4, .teal h4, .purple h5, .teal h5 {
-  color: #FEFAE5; }
+  color: #FDFFF7; }
 
 blockquote p {
   font-size: 0.875rem;
@@ -4484,6 +4484,13 @@ blockquote p {
 cite {
   font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
   font-style: normal; }
+
+.purple a, .teal a {
+  color: #A8EDE6;
+  border-bottom: 1px dotted #A8EDE6; }
+  .purple a:hover, .teal a:hover {
+    color: #F38181;
+    border-bottom: 1px dotted #A8EDE6; }
 
 nav {
   width: 100%;

@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, h5 {
   .purple &, .teal & {
-    color: $cream;
+    color: $white;
   }
 }
 
@@ -17,3 +17,16 @@ cite {
 }
 
 // Headings
+
+
+// Links
+a {
+  .purple &, .teal & {
+    color: $light-teal;
+    border-bottom: 1px dotted $light-teal;
+    &:hover {
+      color: $pink;
+      border-bottom: 1px dotted $light-teal;
+    }
+  }
+}
