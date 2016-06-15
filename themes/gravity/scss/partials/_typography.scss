@@ -21,7 +21,7 @@ cite {
 
 // Links
 a {
-  .purple &, .teal & {
+  .purple &, .teal:not(#browsecourses) & {
     color: $light-teal;
     border-bottom: 1px dotted $light-teal;
     &:hover {

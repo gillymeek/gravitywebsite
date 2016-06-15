@@ -4485,10 +4485,10 @@ cite {
   font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
   font-style: normal; }
 
-.purple a, .teal a {
+.purple a, .teal:not(#browsecourses) a {
   color: #A8EDE6;
   border-bottom: 1px dotted #A8EDE6; }
-  .purple a:hover, .teal a:hover {
+  .purple a:hover, .teal:not(#browsecourses) a:hover {
     color: #F38181;
     border-bottom: 1px dotted #A8EDE6; }
 
