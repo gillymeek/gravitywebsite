@@ -218,3 +218,11 @@ margin: 0 auto;
 .course-container {
   margin-top: -75px;
 }
+
+
+footer {
+  @include gap(both, medium);
+  li:last-child {
+    font-size: $global-font-size / 1.20;
+  }
+}

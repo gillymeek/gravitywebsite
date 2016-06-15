@@ -21,12 +21,18 @@ cite {
 
 // Links
 a {
-  .purple &, .teal:not(#browsecourses) & {
+  .purple:not(footer) &, .teal:not(#browsecourses) & {
     color: $light-teal;
     border-bottom: 1px dotted $light-teal;
     &:hover {
       color: $pink;
       border-bottom: 1px dotted $light-teal;
+    }
+  }
+  .purple & {
+    color: $light-teal;
+    &:hover {
+      color: $pink;
     }
   }
 }

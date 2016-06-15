@@ -4485,12 +4485,17 @@ cite {
   font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
   font-style: normal; }
 
-.purple a, .teal:not(#browsecourses) a {
+.purple:not(footer) a, .teal:not(#browsecourses) a {
   color: #A8EDE6;
   border-bottom: 1px dotted #A8EDE6; }
-  .purple a:hover, .teal:not(#browsecourses) a:hover {
+  .purple:not(footer) a:hover, .teal:not(#browsecourses) a:hover {
     color: #F38181;
     border-bottom: 1px dotted #A8EDE6; }
+
+.purple a {
+  color: #A8EDE6; }
+  .purple a:hover {
+    color: #F38181; }
 
 nav {
   width: 100%;
@@ -4760,3 +4765,9 @@ nav {
 
 .course-container {
   margin-top: -75px; }
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  footer li:last-child {
+    font-size: 83.3333333333%; }
