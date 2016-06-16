@@ -4768,6 +4768,8 @@ nav {
 
 footer {
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  font-weight: bold; }
   footer li:last-child {
-    font-size: 83.3333333333%; }
+    font-size: 83.3333333333%;
+    font-weight: normal; }

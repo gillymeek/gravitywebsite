@@ -222,7 +222,9 @@ margin: 0 auto;
 
 footer {
   @include gap(both, medium);
+  font-weight: bold;
   li:last-child {
     font-size: $global-font-size / 1.20;
+    font-weight: normal;
   }
 }
