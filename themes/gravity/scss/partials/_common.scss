@@ -17,7 +17,13 @@ h3::after {
 
 .underline-left::after {
   @include breakpoint(medium) {
-          margin: $gap-small 0 $gap-small 0;
+    margin: $gap-small 0 $gap-small 0;
+  }
+}
+
+.underline-large-left::after {
+  @include breakpoint(large) {
+    margin: $gap-small 0 $gap-small 0;
   }
 }
 

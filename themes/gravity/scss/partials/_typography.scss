@@ -12,21 +12,31 @@ blockquote p {
   /*font-weight: bold;*/
 }
 cite {
-  font-family: $header-font-family;
+  /*font-family: $header-font-family;*/
   font-style: normal;
 }
 
 // Headings
 
+h5 {
+  font-family: $body-font-family;
+  font-weight: bold;
+  margin-bottom: rem-calc(0);
+  color: $body-font-color;
+}
 
 // Links
-a {
+
+a:not(.button) {
+  border-bottom: 1px dotted $anchor-color;
+  &:hover {
+    border-bottom: 1px dotted $anchor-color-hover;
+  }
   .purple:not(footer) &, .teal:not(#browsecourses) & {
     color: $light-teal;
     border-bottom: 1px dotted $light-teal;
     &:hover {
-      color: $pink;
-      border-bottom: 1px dotted $light-teal;
+      border-bottom: 1px dotted $anchor-color-hover;
     }
   }
   .purple & {

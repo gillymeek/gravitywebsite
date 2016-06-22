@@ -5,53 +5,30 @@
   font-weight: normal;
   src: url("../fonts/l-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/l-semibold.woff2") format("woff2"), url("../fonts/l-semibold.woff") format("woff"), url("../fonts/l-semibold.ttf") format("truetype"), url("../fonts/l-semibold.svg#heading") format("svg"); }
 
+/*@include font-face("heading", "../fonts/l-bold", bold);*/
 @font-face {
-  font-family: "heading";
+  font-family: "fs";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fs-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-book.woff2") format("woff2"), url("../fonts/fs-book.woff") format("woff"), url("../fonts/fs-book.ttf") format("truetype"), url("../fonts/fs-book.svg#fs") format("svg"); }
+
+@font-face {
+  font-family: "fs";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/fs-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-italic.woff2") format("woff2"), url("../fonts/fs-italic.woff") format("woff"), url("../fonts/fs-italic.ttf") format("truetype"), url("../fonts/fs-italic.svg#fs") format("svg"); }
+
+@font-face {
+  font-family: "fs";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/l-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/l-bold.woff2") format("woff2"), url("../fonts/l-bold.woff") format("woff"), url("../fonts/l-bold.ttf") format("truetype"), url("../fonts/l-bold.svg#heading") format("svg"); }
+  src: url("../fonts/fs-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-medium.woff2") format("woff2"), url("../fonts/fs-medium.woff") format("woff"), url("../fonts/fs-medium.ttf") format("truetype"), url("../fonts/fs-medium.svg#fs") format("svg"); }
 
 @font-face {
-  font-family: 'arvo';
-  src: url("../fonts/arvo-bold.eot");
-  src: url("../fonts/arvo-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/arvo-bold.woff2") format("woff2"), url("../fonts/arvo-bold.woff") format("woff"), url("../fonts/arvo-bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'arvo';
-  src: url("../fonts/arvo-regular.eot");
-  src: url("../fonts/arvo-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/arvo-regular.woff2") format("woff2"), url("../fonts/arvo-regular.woff") format("woff"), url("../fonts/arvo-regular.ttf") format("truetype");
+  font-family: "gravity";
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'fs';
-  src: url("../fonts/fs-book.eot");
-  src: url("../fonts/fs-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-book.woff2") format("woff2"), url("../fonts/fs-book.woff") format("woff"), url("../fonts/fs-book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'fs';
-  src: url("../fonts/fs-italic.eot");
-  src: url("../fonts/fs-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-italic.woff2") format("woff2"), url("../fonts/fs-italic.woff") format("woff"), url("../fonts/fs-italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'fs';
-  src: url("../fonts/fs-medium.eot");
-  src: url("../fonts/fs-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-medium.woff2") format("woff2"), url("../fonts/fs-medium.woff") format("woff"), url("../fonts/fs-medium.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gravity';
-  src: url("../fonts/gravity.eot");
-  src: url("../fonts/gravity.eot?#iefix") format("embedded-opentype"), url("../fonts/gravity.woff2") format("woff2"), url("../fonts/gravity.woff") format("woff"), url("../fonts/gravity.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  src: url("../fonts/gravity.eot?#iefix") format("embedded-opentype"), url("../fonts/gravity.woff2") format("woff2"), url("../fonts/gravity.woff") format("woff"), url("../fonts/gravity.ttf") format("truetype"), url("../fonts/gravity.svg#gravity") format("svg"); }
 
 /**
  * Foundation for Sites by ZURB
@@ -1720,7 +1697,7 @@ h6 {
   color: #01A2A6;
   text-rendering: optimizeLegibility;
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   line-height: 1.4; }
   h1 small,
   h2 small,
@@ -1744,7 +1721,7 @@ h4 {
   font-size: 1.125rem; }
 
 h5 {
-  font-size: 1.0625rem; }
+  font-size: 1rem; }
 
 h6 {
   font-size: 1rem; }
@@ -1755,11 +1732,11 @@ h6 {
   h2 {
     font-size: 1.75rem; }
   h3 {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   h4 {
     font-size: 1.375rem; }
   h5 {
-    font-size: 1.25rem; }
+    font-size: 1.125rem; }
   h6 {
     font-size: 1rem; } }
 
@@ -1769,11 +1746,11 @@ h6 {
   h2 {
     font-size: 1.75rem; }
   h3 {
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   h4 {
     font-size: 1.5rem; }
   h5 {
-    font-size: 1.25rem; }
+    font-size: 1.125rem; }
   h6 {
     font-size: 1rem; } }
 
@@ -1783,7 +1760,7 @@ a {
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #018b8f; }
+    color: #F38181; }
   a img {
     border: 0; }
 
@@ -4465,6 +4442,10 @@ h3::after {
   .underline-left::after {
     margin: 15px 0 15px 0; } }
 
+@media screen and (min-width: 64em) {
+  .underline-large-left::after {
+    margin: 15px 0 15px 0; } }
+
 /*.test {
   background-color: red;
   @media screen and (min-width: 40em) {
@@ -4482,20 +4463,28 @@ blockquote p {
   /*font-weight: bold;*/ }
 
 cite {
-  font-family: "heading", "arvo", ‘Bookman Old Style’, Georgia, Garamond, ‘Times New Roman’, times;
+  /*font-family: $header-font-family;*/
   font-style: normal; }
 
-.purple:not(footer) a, .teal:not(#browsecourses) a {
-  color: #A8EDE6;
-  border-bottom: 1px dotted #A8EDE6; }
-  .purple:not(footer) a:hover, .teal:not(#browsecourses) a:hover {
-    color: #F38181;
-    border-bottom: 1px dotted #A8EDE6; }
+h5 {
+  font-family: "fs", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #433C4F; }
 
-.purple a {
-  color: #A8EDE6; }
-  .purple a:hover {
-    color: #F38181; }
+a:not(.button) {
+  border-bottom: 1px dotted #01A2A6; }
+  a:not(.button):hover {
+    border-bottom: 1px dotted #F38181; }
+  .purple:not(footer) a:not(.button), .teal:not(#browsecourses) a:not(.button) {
+    color: #A8EDE6;
+    border-bottom: 1px dotted #A8EDE6; }
+    .purple:not(footer) a:not(.button):hover, .teal:not(#browsecourses) a:not(.button):hover {
+      border-bottom: 1px dotted #F38181; }
+  .purple a:not(.button) {
+    color: #A8EDE6; }
+    .purple a:not(.button):hover {
+      color: #F38181; }
 
 nav {
   width: 100%;
@@ -4550,11 +4539,11 @@ nav {
 .button:not(.secondary) {
   border-color: #EF5959; }
 
-.button + .secondary {
+.button + .secondary, .secondary {
   color: #01A2A6;
   border-color: #A8EDE6;
   background-color: #FDFFF7; }
-  .button + .secondary:hover {
+  .button + .secondary:hover, .secondary:hover {
     color: #01A2A6;
     border-color: #01A2A6;
     background-color: #A8EDE6; }
@@ -4587,12 +4576,11 @@ nav {
   z-index: -1;
 }*/
 #newton {
-  /*@include horizontal-center;*/
-  margin: 0 auto;
-  width: 510px;
-  height: 250px;
+  margin: 15px auto 0 auto;
+  width: 264px;
+  height: 260px;
   background-image: url("/user/themes/gravity/images/illustrations/newton-small-illustration@2x.png");
-  background-size: 510px 250px; }
+  background-size: 264px 260px; }
   @media only screen and (min-width: 40em) {
     #newton {
       width: 675px;
@@ -4611,9 +4599,13 @@ nav {
   @media only screen and (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 64em) and (min-resolution: 192dpi) {
     #newton {
       background-image: url("/user/themes/gravity/images/illustrations/newton-large-illustration@2x.png"); } }
+  @media screen and (min-width: 40em) {
+    #newton {
+      margin: 0 auto; } }
 
 #introduction {
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 30px; }
   #introduction h1 {
     padding-top: 15px; }
   #introduction .button {
@@ -4627,6 +4619,35 @@ nav {
 @media screen and (min-width: 64em) {
   .button + .button {
     margin-left: 0; } }
+
+#announcement {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FEFAE5;
+  z-index: -2; }
+  #announcement img {
+    /*background-color: pink;*/
+    /*border-radius: 50%;*/
+    position: relative;
+    top: 0;
+    z-index: 10; }
+  #announcement span {
+    /*background-color: pink;*/ }
+  #announcement .test::after {
+    display: block;
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+    top: -70px;
+    left: -35px;
+    background-color: #A8EDE6;
+    z-index: -1; }
+  #announcement div > div:first-child {
+    /*background-color: pink;*/ }
+  #announcement div > div:nth-child(2) {
+    /*background-color: green;*/ }
 
 #gilly {
   padding-top: 60px;
@@ -4645,13 +4666,9 @@ nav {
 #clients {
   padding-top: 30px;
   padding-bottom: 30px; }
-  #clients ul {
-    /*li {
-      max-width: 150px;
-    }*/ }
-    @media screen and (min-width: 40em) {
-      #clients ul > li {
-        display: table-cell; } }
+  @media screen and (min-width: 40em) {
+    #clients ul > li {
+      display: table-cell; } }
 
 #formula {
   padding-top: 60px;
@@ -4663,6 +4680,9 @@ nav {
   height: 215px;
   background-image: url("/user/themes/gravity/images/illustrations/formula-illustration@2x.png");
   background-size: 290px 215px; }
+  @media screen and (min-width: 64em) {
+    #formula-illustration {
+      margin: 15% auto 0 auto; } }
   @media only screen and (min-width: 40em) {
     #formula-illustration {
       width: 440px;
@@ -4701,7 +4721,7 @@ nav {
 
 #courses h4 {
   color: inherit;
-  /*font-weight: bold;*/ }
+  margin-bottom: 0; }
 
 #courses img {
   padding-top: 15px;
@@ -4765,6 +4785,33 @@ nav {
 
 .course-container {
   margin-top: -75px; }
+
+#quarterly {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  #quarterly ul {
+    font-weight: bold; }
+    #quarterly ul li {
+      color: #01A2A6;
+      padding-bottom: 7.5px;
+      margin-bottom: 7.5px;
+      border-bottom: 1px solid #A8EDE6; }
+
+#pyramid {
+  margin: 0 auto 15px auto;
+  width: 208px;
+  height: 209px;
+  background-image: url("/user/themes/gravity/images/illustrations/pyramid-small@2x.png");
+  background-size: 208px 209px; }
+  @media only screen and (min-width: 40em) {
+    #pyramid {
+      width: 290px;
+      height: 290px;
+      background-image: url("/user/themes/gravity/images/illustrations/pyramid.png");
+      background-size: 290px 290px; } }
+  @media only screen and (min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi) {
+    #pyramid {
+      background-image: url("/user/themes/gravity/images/illustrations/pyramid@2x.png"); } }
 
 footer {
   padding-top: 30px;

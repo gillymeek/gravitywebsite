@@ -4019,6 +4019,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/illustrations\/alert.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5760,
+		"inputAbbreviatedPath": "\/images\/illustrations\/alert.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/alert.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/alert@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12425,
+		"inputAbbreviatedPath": "\/images\/illustrations\/alert@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/alert@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/illustrations\/bespoke-training.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4059,6 +4081,28 @@
 		"initialSize": 18463,
 		"inputAbbreviatedPath": "\/images\/illustrations\/coaching-skills@2x.png",
 		"outputAbbreviatedPath": "\/images\/illustrations\/coaching-skills@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/experiment.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6742,
+		"inputAbbreviatedPath": "\/images\/illustrations\/experiment.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/experiment.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/experiment@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15035,
+		"inputAbbreviatedPath": "\/images\/illustrations\/experiment@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/experiment@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4125,6 +4169,28 @@
 		"initialSize": 18712,
 		"inputAbbreviatedPath": "\/images\/illustrations\/impact-and-influence@2x.png",
 		"outputAbbreviatedPath": "\/images\/illustrations\/impact-and-influence@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/lightbulb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6633,
+		"inputAbbreviatedPath": "\/images\/illustrations\/lightbulb.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/lightbulb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/lightbulb@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14777,
+		"inputAbbreviatedPath": "\/images\/illustrations\/lightbulb@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/lightbulb@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4279,6 +4345,72 @@
 		"initialSize": 25188,
 		"inputAbbreviatedPath": "\/images\/illustrations\/presentation-skills@2x.png",
 		"outputAbbreviatedPath": "\/images\/illustrations\/presentation-skills@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/pyramid-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23281,
+		"inputAbbreviatedPath": "\/images\/illustrations\/pyramid-small.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/pyramid-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/pyramid-small@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54428,
+		"inputAbbreviatedPath": "\/images\/illustrations\/pyramid-small@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/pyramid-small@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/pyramid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33955,
+		"inputAbbreviatedPath": "\/images\/illustrations\/pyramid.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/pyramid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/pyramid@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78201,
+		"inputAbbreviatedPath": "\/images\/illustrations\/pyramid@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/pyramid@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/results.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4861,
+		"inputAbbreviatedPath": "\/images\/illustrations\/results.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/results.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/results@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10188,
+		"inputAbbreviatedPath": "\/images\/illustrations\/results@2x.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/results@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

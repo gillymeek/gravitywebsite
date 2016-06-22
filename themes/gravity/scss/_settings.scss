@@ -131,29 +131,29 @@ $header-sizes: (
     'h2': 20,
     'h3': 19,
     'h4': 18,
-    'h5': 17,
+    'h5': 16,
     'h6': 16,
   ),
   medium: (
     'h1': 32, // Was 48
     'h2': 28,
-    'h3': 20,
+    'h3': 24,
     'h4': 22,
-    'h5': 20,
+    'h5': 18,
     'h6': 16,
   ),
   large: ( // Added to create more distinction between sizes
     'h1': 38, // Was 48, then 36
     'h2': 28,
-    'h3': 20,
+    'h3': 24,
     'h4': 24,
-    'h5': 20,
+    'h5': 18,
     'h6': 16,
   ),
 );
 $header-color: $teal; // Was inherit
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1.5rem; // Was 0.5rem
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
@@ -167,7 +167,7 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color-hover: $alert-color; // was scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

@@ -15,7 +15,7 @@
   border-color: $dark-pink;
 }
 
-.button + .secondary {
+.button + .secondary, .secondary {
   color: $teal;
   border-color: $light-teal;
   background-color: $white;

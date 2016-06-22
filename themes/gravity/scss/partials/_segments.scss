@@ -40,16 +40,18 @@
 // Introduction segment
 
 #newton {
-/*@include horizontal-center;*/
-margin: 0 auto;
-@include retina-image(510px, 250px, newton-small-illustration, small);
-@include retina-image(675px, 350px, newton-medium-illustration, medium);
-@include retina-image(950px, 490px, newton-large-illustration, large);
+  margin: $gap-small auto 0 auto;
+  @include retina-image(264px, 260px, newton-small-illustration, small);
+  @include retina-image(675px, 350px, newton-medium-illustration, medium);
+  @include retina-image(950px, 490px, newton-large-illustration, large);
+  @include breakpoint(medium) {
+    margin: 0 auto;
+  }
 }
 
 #introduction {
   overflow: hidden;
-
+  @include gap(bottom, medium);
   h1 {
     @include gap(top, small);
   }
@@ -70,6 +72,47 @@ margin: 0 auto;
     margin-left: 0;
   }
 }
+
+// Announcement Segment
+
+#announcement {
+  @include gap(both, small);
+  background-color: $cream;
+  z-index: -2;
+  img {
+    /*background-color: pink;*/
+    /*border-radius: 50%;*/
+    position: relative;
+    top: 0;
+    z-index: 10;
+      }
+      span {
+        /*background-color: pink;*/
+      }
+  .test::after {
+    display: block;
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+    top: -70px;
+    left: -35px;
+    background-color: $light-teal;
+    z-index: -1;
+  }
+  p {
+
+  }
+  div > div:first-child {
+    /*background-color: pink;*/
+  }
+  div > div:nth-child(2) {
+    /*background-color: green;*/
+  }
+}
+
+// Gilly Segment
 
 #gilly {
   @include gap(both, large);
@@ -93,24 +136,22 @@ margin: 0 auto;
     @include breakpoint(medium) {
       @include menu-direction(horizontal);
     }
-    /*li {
-      max-width: 150px;
-    }*/
   }
 }
 
 // Formula
 #formula {
-
-@include gap(both, large)
+  @include gap(both, large)
 
 }
 
 #formula-illustration {
   margin: 0 auto;
+  @include breakpoint(large) {
+    margin: 15% auto 0 auto;
+  }
   @include retina-image(290px, 215px, formula-illustration, small);
   @include retina-image(440px, 320px, formula-illustration-large, medium);
-
 }
 
 // Browse Courses Segment
@@ -156,7 +197,7 @@ margin: 0 auto;
 #courses {
   h4 {
     color: inherit;
-    /*font-weight: bold;*/
+    margin-bottom: 0;
   }
   img {
     @include gap(both, small);
@@ -219,6 +260,28 @@ margin: 0 auto;
   margin-top: -75px;
 }
 
+// Quarterly segment
+
+#quarterly {
+  @include gap(both, large);
+  ul {
+    font-weight: bold;
+    li {
+      color: $teal;
+      @include gap(bottom, tiny);
+      @include margin(null null $gap-tiny null);
+      border-bottom: 1px solid $light-teal;
+    }
+  }
+}
+
+#pyramid { // Part of Quarterly above
+  margin: 0 auto $gap-small auto;
+  @include retina-image(208px, 209px, pyramid-small, small);
+  @include retina-image(290px, 290px, pyramid, medium);
+}
+
+// Footer
 
 footer {
   @include gap(both, medium);
