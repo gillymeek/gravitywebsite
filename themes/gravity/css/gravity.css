@@ -27,7 +27,7 @@
 @font-face {
   font-family: "gravity";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: url("../fonts/gravity.eot?#iefix") format("embedded-opentype"), url("../fonts/gravity.woff2") format("woff2"), url("../fonts/gravity.woff") format("woff"), url("../fonts/gravity.ttf") format("truetype"), url("../fonts/gravity.svg#gravity") format("svg"); }
 
 /**
