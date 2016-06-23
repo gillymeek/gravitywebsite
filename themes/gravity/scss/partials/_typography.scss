@@ -45,4 +45,11 @@ a:not(.button) {
       color: $pink;
     }
   }
+  nav &, footer & {
+    border-bottom: 0;
+    &:hover {
+      border-bottom: 0;
+      color: $pink;
+    }
+  }
 }

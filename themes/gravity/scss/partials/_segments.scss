@@ -209,33 +209,10 @@
     display: inline-table;
     width: 100%;
     @include border-top-radius(10px);
+    position: relative;
   }
   th {
     @include border-top-radius(10px);
-    /*div span:first-child {
-      color: $white;
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    &::before {
-      content: attr(data-training-days);
-      background-color: $purple;
-      color: $white;
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    img::before {
-      content: "test";
-      color: red;
-      display: block;
-      positon: relative;
-      top: -40;
-      background-color: pink;
-    }*/
   }
   tfoot { // Last td cell for button
     background-color: transparent;
@@ -253,6 +230,36 @@
     @include gap(both, small);
     @include border-top-radius(0);
     @include border-bottom-radius(10px);
+  }
+}
+
+.days {
+  &::before {
+    content: attr(data-training-days);
+    background-color: $purple;
+    color: $white;
+    display: block;
+    width: 50px;
+    position: absolute;
+    float: left;
+    top: 25;
+    left: 25;
+    height: 50px;
+    font-size: $global-font-size * 1.25;
+    padding-top: 10px;
+    border-radius: 50%;
+  }
+  &::after {
+    content: attr(data-training-days-text);
+    color: $purple;
+    display: block;
+    float: left;
+    margin-top: -125px;
+    width: 50px;
+    height: 50px;
+  }
+  & .alternative::after {
+    margin-top: -450px;
   }
 }
 

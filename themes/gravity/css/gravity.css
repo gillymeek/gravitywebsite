@@ -4485,6 +4485,11 @@ a:not(.button) {
     color: #A8EDE6; }
     .purple a:not(.button):hover {
       color: #F38181; }
+  nav a:not(.button), footer a:not(.button) {
+    border-bottom: 0; }
+    nav a:not(.button):hover, footer a:not(.button):hover {
+      border-bottom: 0;
+      color: #F38181; }
 
 nav {
   width: 100%;
@@ -4734,35 +4739,12 @@ nav {
   display: inline-table;
   width: 100%;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  border-top-right-radius: 10px;
+  position: relative; }
 
 #courses th {
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  /*div span:first-child {
-      color: $white;
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    &::before {
-      content: attr(data-training-days);
-      background-color: $purple;
-      color: $white;
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    img::before {
-      content: "test";
-      color: red;
-      display: block;
-      positon: relative;
-      top: -40;
-      background-color: pink;
-    }*/ }
+  border-top-right-radius: 10px; }
 
 #courses tfoot {
   background-color: transparent;
@@ -4782,6 +4764,33 @@ nav {
   border-top-right-radius: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px; }
+
+.days::before {
+  content: attr(data-training-days);
+  background-color: #615772;
+  color: #FDFFF7;
+  display: block;
+  width: 50px;
+  position: absolute;
+  float: left;
+  top: 25;
+  left: 25;
+  height: 50px;
+  font-size: 125%;
+  padding-top: 10px;
+  border-radius: 50%; }
+
+.days::after {
+  content: attr(data-training-days-text);
+  color: #615772;
+  display: block;
+  float: left;
+  margin-top: -125px;
+  width: 50px;
+  height: 50px; }
+
+.days .alternative::after {
+  margin-top: -450px; }
 
 .course-container {
   margin-top: -75px; }
