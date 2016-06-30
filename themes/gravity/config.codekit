@@ -3920,17 +3920,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/common\/gilly.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 50085,
-		"inputAbbreviatedPath": "\/images\/common\/gilly.png",
-		"outputAbbreviatedPath": "\/images\/common\/gilly.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/common\/gravity-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3986,13 +3975,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/gilly-photo-placeholder.png": {
+	"\/images\/gravity-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6968,
-		"inputAbbreviatedPath": "\/images\/gilly-photo-placeholder.png",
-		"outputAbbreviatedPath": "\/images\/gilly-photo-placeholder.png",
+		"initialSize": 10082,
+		"inputAbbreviatedPath": "\/images\/gravity-logo.png",
+		"outputAbbreviatedPath": "\/images\/gravity-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4514,39 +4503,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/tree1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8507,
-		"inputAbbreviatedPath": "\/images\/tree1.png",
-		"outputAbbreviatedPath": "\/images\/tree1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/tree2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8806,
-		"inputAbbreviatedPath": "\/images\/tree2.png",
-		"outputAbbreviatedPath": "\/images\/tree2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/tree3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5354,
-		"inputAbbreviatedPath": "\/images\/tree3.png",
-		"outputAbbreviatedPath": "\/images\/tree3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4627,7 +4583,7 @@
 		"useLibsass": 0
 		},
 	"\/scss\/gravity.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -4637,9 +4593,9 @@
 		"outputAbbreviatedPath": "\/css\/gravity.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
 	"\/scss\/mixins\/_mixins.scss": {

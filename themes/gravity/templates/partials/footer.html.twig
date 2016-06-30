@@ -1,52 +1,31 @@
 <footer class="purple">
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="menu-centered">
-        <ul class="menu">
-          <li>0207 195 1700</li>
-          <li><a href="mailto:{{ "hello@gravity-training.co.uk"|safe_email }}?subject=Hi%20Gilly" title="Email us and say hello">{{ "hello@gravity-training.co.uk"|safe_email }}</a></li>
-          <li>&copy; Copyright Gravity Training and Development Limited {{ "now"|date("Y") }}</li>
-        </ul>
+  <div itemscope itemtype=”http://schema.org/ProfessionalService>
+    <meta itemprop="logo" content="http://gravity-training.co.uk/user/themes/gravity/images/gravity-logo.png">
+    <div itemprop="founder" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gilly Meek">
+    </div>
+    <meta itemprop="legalName" content="Gravity Training and Development Limited">
+    <div class="row">
+      <div class="large-12 columns text-center medium-text-left">
+        <img src="/user/themes/gravity/images/common/gravity-logo-reverse.svg" alt="Gravity Logo for Footer" width="28" height="40"><span itemprop="name">Gravity</span>
       </div>
-    </div>
-  </div>
-</footer>
-
-{#
-  <div class="row">
-    <div class="large-3 medium-6 columns">
-      <h4>Contact us</h4>
-
-    </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Address</h4>
-
-<!--
-Schema is in wrong order and needs some thought       -->
-      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <div itemscope itemtype="http://schema.org/ProfessionalService">
-        Gravity Training and Development Limited<br>
-          <span itemprop="streetAddress">
-            71-75 Shelton Street,<br>
-            Convent Garden,
-          </span>
-          <span itemprop="addressLocality">London</span>.<br>
-          <meta itemprop="addressRegion" content="Greater London">
+      <div class="large-4 medium-6 columns text-center medium-text-left">
+        <span itemprop="telephone">+44 (0)207 195 1700</span>
+        <a href="mailto:{{ "hello@gravity-training.co.uk"|safe_email }}?subject=Hi%20Gilly" title="Email us and say hello">{{ "hello@gravity-training.co.uk"|safe_email }}</a>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="legalName">Gravity Training and Development Limited</span><br>
+          <span itemprop="streetAddress">71-75 Shelton Street</span>,<br>
+          <span itemprop="addressLocality">Convent Garden</span>,<br>
+          <span itemprop="addressRegion">London</span>.<br>
           <span itemprop="postalCode">WC2H 9JQ</span>.<br>
           <span itemprop="addressCountry">United Kingdom</span>
         </div>
       </div>
+      <div class="large-6 end medium-6 columns text-center medium-text-left">
+        <p>Thank you for visiting and taking the time to learn what we do.</p>
+        <p>&copy; Copyright Gravity Training and Development Limited {{ "now"|date("Y") }}</p>
+      </div>
     </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Favourite books</h4>
-    </div>
-    <div class="large-3 medium-6 columns">
-      <h4>Social media</h4>
-    </div>
+    <meta itemprop="email" content="hello@gravity-training.co.uk">
   </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <p>&copy; Copyright Gravity Training and Development Limited {{ "now"|date("Y") }} <a href="#">Our Privacy Policy</a></p>
-    </div>
-  </div>
-</footer> #}
+</footer>
