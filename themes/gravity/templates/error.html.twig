@@ -1,0 +1,14 @@
+{% extends 'partials/gravity.html.twig' %}
+
+{% block content %}
+  	<div class="row" id="error">
+    	<div class="large-12 columns text-center">
+        <img data-interchange="[/user/themes/gravity/images/illustrations/error.png, small], [/user/themes/gravity/images/illustrations/error@2x.png, retina]" alt="Error Illustration" width="290" height="290">
+  			<h1>Oh no, you've got a horrible {{ page.header.http_response_code }} code, we're sorry!</h1>
+        <p>
+  				{{ page.content }}
+  			</p>
+        <p>Please head on over to our brand new and lovely <a href="/" alt="Gravity home page">home page</a> instead and you'll be soon be right as rain.</p>
+  		</div>
+  	</div>
+{% endblock %}

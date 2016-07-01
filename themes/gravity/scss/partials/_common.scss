@@ -35,6 +35,11 @@ h3::after {
   }
 }
 
+// 500 Error page
+
+#error {
+  @include gap(both, large);
+}
 
 // ---
 
