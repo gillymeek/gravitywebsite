@@ -1,0 +1,39 @@
+// Footer
+
+footer {
+  background-color: $purple;
+  @include gap(both, large);
+  /*font-weight: bold;*/
+  li:last-child {
+    font-size: $global-font-size / 1.20;
+    font-weight: normal;
+  }
+  img {
+    margin: -21px 7px 0 0;
+  }
+  img + span {
+    margin-bottom: -15px;
+
+    display: inline-block;
+    font-family: $logo-font-family;
+    font-weight: bold;
+    font-size: 26px;
+    @include gap(bottom, medium);
+  }
+  span[itemprop*="telephone"] {
+    display: block;
+    font-weight: bold;
+    @include gap(bottom, small);
+    & + a {
+      display: block;
+      font-weight: bold;
+      @include gap(bottom, small);
+    }
+  }
+  .row > div:last-child {
+    @include gap(top, medium)
+    @include breakpoint(medium) {
+      padding: 0;
+    }
+  }
+}

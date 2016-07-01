@@ -1,3 +1,11 @@
+// HTML Gradient - This stops the navigation and footer from showing white top and bottom when scrolling up and down in Safari browsers. Doesn't work for Chrome.
+html {
+    height: 100%;
+    background-color: $white;
+    background: linear-gradient(to bottom, $light-teal 0%,$light-teal 20%,$white 20%,$white 60%,$purple 20%, $purple 20%);
+    background-attachment: fixed;
+}
+
 // Heading Underline Effect
 
 h1::after, h2::after, h3::after {

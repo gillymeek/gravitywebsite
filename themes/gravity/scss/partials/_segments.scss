@@ -26,6 +26,10 @@
   background-color: $cream;
 }
 
+.white {
+  background-color: $white;
+}
+
 /*.purple::before {
   content:"";
   position: absolute;
@@ -202,8 +206,12 @@
   img {
     @include gap(both, small);
   }
+  th {
+    vertical-align: top;
+  }
   td {
     font-size: $global-font-size / 1.15;
+    vertical-align: top;
   }
   thead { // Hacks because Firefox doesn't show rounded corners otherwise!
     display: inline-table;
@@ -253,8 +261,9 @@
     content: attr(data-training-days-text);
     color: $purple;
     display: block;
-    float: left;
-    margin-top: -125px;
+    position: absolute;
+    top: 0; // Makes it behave like a before essentially, placing at the top of the element, where the margin then works below
+    margin-top: 68px;
     width: 50px;
     height: 50px;
   }
@@ -283,43 +292,4 @@
   margin: 0 auto $gap-small auto;
   @include retina-image(208px, 209px, pyramid-small, small);
   @include retina-image(290px, 290px, pyramid, medium);
-}
-
-// Footer
-
-footer {
-  @include gap(both, large);
-  /*font-weight: bold;*/
-  li:last-child {
-    font-size: $global-font-size / 1.20;
-    font-weight: normal;
-  }
-  img {
-    margin: -21px 7px 0 0;
-  }
-  img + span {
-    margin-bottom: -15px;
-
-    display: inline-block;
-    font-family: $logo-font-family;
-    font-weight: bold;
-    font-size: 26px;
-    @include gap(bottom, medium);
-  }
-  span[itemprop*="telephone"] {
-    display: block;
-    font-weight: bold;
-    @include gap(bottom, small);
-    & + a {
-      display: block;
-      font-weight: bold;
-      @include gap(bottom, small);
-    }
-  }
-  .row > div:last-child {
-    @include gap(top, medium)
-    @include breakpoint(medium) {
-      padding: 0;
-    }
-  }
 }

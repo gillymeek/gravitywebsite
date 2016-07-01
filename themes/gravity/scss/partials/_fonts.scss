@@ -1,10 +1,7 @@
 // Heading fonts
-
 @include font-face("heading", "../fonts/l-semibold", normal);
-/*@include font-face("heading", "../fonts/l-bold", bold);*/
 
 // Body fonts
-
 @include font-face("fs", "../fonts/fs-book", normal);
 @include font-face("fs", "../fonts/fs-italic", normal, italic);
 @include font-face("fs", "../fonts/fs-medium", bold);
