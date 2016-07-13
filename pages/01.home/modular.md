@@ -6,5 +6,10 @@ content:
         by: default
         dir: asc
         custom:
+            - _introduction
+            - _gilly
+            - _clients
+            - _formula
             - _courses
+            - _quarterly
 ---

@@ -81,38 +81,14 @@
 
 #announcement {
   @include gap(both, small);
-  background-color: $cream;
+  background-color: $light-teal;
   z-index: -2;
+  /*border-top: 4px solid $light-teal;*/
   img {
-    /*background-color: pink;*/
-    /*border-radius: 50%;*/
-    position: relative;
-    top: 0;
-    z-index: 10;
-      }
-      span {
-        /*background-color: pink;*/
-      }
-  .test::after {
-    display: block;
-    content: "";
-    height: 100px;
-    width: 100px;
-    position: relative;
-    border-radius: 50%;
-    top: -70px;
-    left: -35px;
-    background-color: $light-teal;
-    z-index: -1;
+    /*margin-top: -55px;*/
   }
   p {
 
-  }
-  div > div:first-child {
-    /*background-color: pink;*/
-  }
-  div > div:nth-child(2) {
-    /*background-color: green;*/
   }
 }
 

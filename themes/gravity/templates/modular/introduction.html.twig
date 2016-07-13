@@ -1,0 +1,20 @@
+<div class="white">
+  <section id="introduction">
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="newton"></div>
+        <h1 class="text-center">{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 large-offset-1 medium-12 large-text-left text-center columns">
+        {{ content }}
+      </div>
+      <div class="large-5 medium-12 large-text-left text-center columns" data-magellan data-animation-easing data-animation-duration="2000">
+        {% for buttons in page.header.buttons %}
+        <a href="{{ buttons.link }}" class="{{ buttons.class }}" {% if buttons.datamode %} data-mode="{{ buttons.datamode }}"{% endif %}{% if buttons.target %} target="{{ buttons.target }}"{% endif %}>{{ buttons.text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

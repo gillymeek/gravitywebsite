@@ -25,3 +25,17 @@
     background-color: $light-teal;
   }
 }
+
+
+// Navigation button special
+nav .button {
+  font-size: 16px;
+  text-transform: capitalize;
+  border-color: $teal !important;
+  background-color: $light-teal;
+  &:hover {
+    color: $white;
+    border-color: $cream;
+    background-color: $teal;
+  }
+}
