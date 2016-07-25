@@ -1,33 +1,13 @@
 ---
 title: The essential training course for managers
-menu: Features
-class: small
-features:
-    - header: Markdown Syntax
-      icon: text-height
-    - header: Twig Templating
-      icon: code
-    - header: Smart Caching
-      icon: rocket
-    - header: Flexible Taxonomies
-      icon: tags
-    - header: Simple Install
-      icon: cloud-download
-    - header: Powerful Plugins
-      icon: cogs
-    - header: Intuitive UI
-      icon: dashboard
-    - header: File-Based
-      icon: file-text
-    - header: Documentation
-      icon: bookmark
-    - header: On Github
-      icon: github
-    - header: Responsive Design
-      icon: html5
-    - header: Awesomazing
-      icon: heart
+list:
+    - Manage different & difficult personalities
+    - Motivate your team to increase performance
+    - Give positive & constructive feedback
+    - Delegate, set clear goals & run effective 121s
+    - Use coaching to develop individuals
+dates:
+    - 13th, 14th & 15th September 2016
+    - 
 ---
-
-## Stuffed full of Amazing Features
-### This is a non-inclusive smattering of them
+This course gives a complete guide to managing people whether you're a complete beginner or an experienced manager. It shows you what and how and is filled with tools, tips and practice. By the end of the Management Training Course you will be able to:

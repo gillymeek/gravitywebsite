@@ -10,3 +10,5 @@ Thumbs.db
 /plugins/*
 /accounts/*
 /themes/antimatter/*
+
+config/system.yaml
