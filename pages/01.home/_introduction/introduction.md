@@ -14,5 +14,4 @@ buttons:
         datamode: 2
         target: _blank
 ---
-
 We deliver in-house management training courses and partner with you to select or design bespoke training for your organisation.
