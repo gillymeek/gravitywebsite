@@ -36,10 +36,40 @@ nav {
   }
 }
 
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+// added this to stop Foundation default hiding the first section - it shifted it to the right and hid it under a 100% width. This makes it absolute and z-index it above content instead.
+.fix {
+  margin-top: 50px;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+.menu-icon {
+  float: right;
+  margin-top: 16px;
+  margin-right: 6px;
+}
 
 .top-bar-right {
   font-weight: bold;
   margin-top: 30px; // Was 37 for same baseline height as logo
+}
+
+.top-bar-left {
+  font-weight: bold;
 }
 
 .top-bar {
