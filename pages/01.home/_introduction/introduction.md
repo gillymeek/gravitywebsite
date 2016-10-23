@@ -9,7 +9,7 @@ buttons:
         target: null
     -
         text: 'Discuss your needs'
-        link: 'https://gilly4.typeform.com/to/CSwSf8'
+        link: 'https://gravitytraining.typeform.com/to/CSwSf8'
         class: 'button secondary typeform-share link'
         datamode: 2
         target: _blank
