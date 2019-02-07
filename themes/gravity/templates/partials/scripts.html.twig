@@ -4,13 +4,42 @@
   <script src="/user/themes/gravity/bower_components/foundation-sites/dist/foundation.js"></script>
   <script src="/user/themes/gravity/bower_components/matchHeight/dist/jquery.matchHeight-min.js"></script>
   <script src="/user/themes/gravity/js/min/app-min.js"></script>
+  <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+  {# <script>
+    var myLandbotLivechat = new LandbotLivechat({
+      index: 'https://landbot.io/u/H-127294-ZSZNZ01F2NC6O5PZ/index.html',
+    });
+  </script> #}
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  !function(p){p.fn.ihavecookies=function(e,o){var i=p(this),t=p.extend({cookieTypes:[{type:"Analytics",value:"analytics",description:"Cookies related to site visits, browser types, etc."}],title:"&#x1F36A; Cookies & Privacy",message:"Like most websites, we use cookies. Your privacy matters to us.",link:"/privacy-policy",delay:2e3,expires:30,moreInfoLabel:"Learn more.",acceptBtnLabel:"Accept",advancedBtnLabel:"Customise",cookieTypesTitle:"Select cookies to accept",fixedCookieTypeLabel:"Necessary",fixedCookieTypeDesc:"These are cookies that are essential for the website to work correctly.",onAccept:function(){},uncheckBoxes:!1},e),n=u("cookieControl"),c=u("cookieControlPrefs");if(n&&c&&"reinit"!=o){var r=!0;"false"==n&&(r=!1),d(r,t.expires)}else{p("#gdpr-cookie-message").remove();var a='<li><input type="checkbox" name="gdpr[]" value="necessary" checked="checked" disabled="disabled"> <label title="'+t.fixedCookieTypeDesc+'">'+t.fixedCookieTypeLabel+"</label></li>";preferences=JSON.parse(c),p.each(t.cookieTypes,function(e,o){if(""!==o.type&&""!==o.value){var i="";!1!==o.description&&(i=' title="'+o.description+'"'),a+='<li><input type="checkbox" id="gdpr-cookietype-'+o.value+'" name="gdpr[]" value="'+o.value+'" data-auto="on"> <label for="gdpr-cookietype-'+o.value+'"'+i+">"+o.type+"</label></li>"}});var s='<div id="gdpr-cookie-message"><h5>'+t.title+"</h5><p>"+t.message+' <a href="'+t.link+'">'+t.moreInfoLabel+'</a><div id="gdpr-cookie-types" style="display:none;"><h5>'+t.cookieTypesTitle+"</h5><ul>"+a+'</ul></div><p><button id="gdpr-cookie-accept" type="button" class="button small secondary">'+t.acceptBtnLabel+'</button><button id="gdpr-cookie-advanced" type="button" class="button secondary small">'+t.advancedBtnLabel+"</button></p></div>";setTimeout(function(){p(i).append(s),p("#gdpr-cookie-message").hide().fadeIn("slow",function(){"reinit"==o&&(p("#gdpr-cookie-advanced").trigger("click"),p.each(preferences,function(e,o){p("input#gdpr-cookietype-"+o).prop("checked",!0)}))})},t.delay),p("body").on("click","#gdpr-cookie-accept",function(){d(!0,t.expires),p('input[name="gdpr[]"][data-auto="on"]').prop("checked",!0);var i=[];p.each(p('input[name="gdpr[]"]').serializeArray(),function(e,o){i.push(o.value)}),l("cookieControlPrefs",JSON.stringify(i),365),t.onAccept.call(this)}),p("body").on("click","#gdpr-cookie-advanced",function(){p('input[name="gdpr[]"]:not(:disabled)').attr("data-auto","off").prop("checked",!1),p("#gdpr-cookie-types").slideDown("fast",function(){p("#gdpr-cookie-advanced").prop("disabled",!0)})})}!0===t.uncheckBoxes&&p('input[type="checkbox"].ihavecookies').prop("checked",!1)},p.fn.ihavecookies.cookie=function(){var e=u("cookieControlPrefs");return JSON.parse(e)},p.fn.ihavecookies.preference=function(e){var o=u("cookieControl"),i=u("cookieControlPrefs");return i=JSON.parse(i),!1!==o&&(!1!==i&&-1!==i.indexOf(e))};var d=function(e,o){l("cookieControl",e,o),p("#gdpr-cookie-message").fadeOut("fast",function(){p(this).remove()})},l=function(e,o,i){var t=new Date;t.setTime(t.getTime()+24*i*60*60*1e3);var n="expires="+t.toUTCString();return document.cookie=e+"="+o+";"+n+";path=/",u(e)},u=function(e){for(var o=e+"=",i=decodeURIComponent(document.cookie).split(";"),t=0;t<i.length;t++){for(var n=i[t];" "==n.charAt(0);)n=n.substring(1);if(0===n.indexOf(o))return n.substring(o.length,n.length)}return!1}}(jQuery);
+  var options = {
+        onAccept: function(){
+            var myPreferences = $.fn.ihavecookies.cookie();
+            // What was selected in cookie preferences
+            // console.log(myPreferences);
+            // Run Google Analytics code.
+            if ($.fn.ihavecookies.preference('analytics') === true) {
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-79463216-1', 'auto');
-  ga('send', 'pageview');
+              ga('create', 'UA-79463216-1', 'auto');
+              ga('send', 'pageview');
+              //console.log('Google analytics run.');
+            }
+        },
+
+    }
+
+  $(document).ready(function() {
+    $('body').ihavecookies(options);
+    if ($.fn.ihavecookies.preference('analytics') === true) {
+
+    }
+    $('#ihavecookiesBtn').on('click', function(){
+      $('body').ihavecookies(options, 'reinit');
+    });
+  });
 
   </script>

@@ -1,0 +1,24 @@
+{% extends 'partials/gravity.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% block content %}
+<div class="white single-page text-center">
+  <section id="{{ page.header.id }}">
+  <div class="teal">
+    <div class="row">
+      <div class="large-12 columns">
+        {{ page.media.images|first('').html() }}
+        <h1 class="text-center">{{ page.title }}</h1>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="large-12 medium-text-left text-center columns">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

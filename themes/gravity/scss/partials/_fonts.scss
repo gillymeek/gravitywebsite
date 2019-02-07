@@ -1,10 +1,45 @@
 // Heading fonts
-@include font-face("heading", "../fonts/l-semibold", normal);
+@include font-face(
+  "heading",
+  "../fonts/l-semibold",
+  ("eot", "ttf", "svg", "woff2", "woff")
+) {
+  font-style: normal;
+  font-weight: 400;
+}
 
 // Body fonts
-@include font-face("fs", "../fonts/fs-book", normal);
-@include font-face("fs", "../fonts/fs-italic", normal, italic);
-@include font-face("fs", "../fonts/fs-medium", bold);
+@include font-face(
+  "fs",
+  "../fonts/fs-book",
+  ("eot", "ttf", "svg", "woff2", "woff")
+) {
+  font-style: normal;
+  font-weight: 400;
+}
+@include font-face(
+  "fs",
+  "../fonts/fs-italic",
+  ("eot", "ttf", "svg", "woff2", "woff")
+) {
+  font-style: italic;
+  font-weight: 400;
+}
+@include font-face(
+  "fs",
+  "../fonts/fs-medium",
+  ("eot", "ttf", "svg", "woff2", "woff")
+) {
+  font-style: bold;
+  font-weight: 600;
+}
 
 // Special fonts
-@include font-face("gravity", "../fonts/gravity", bold);
+@include font-face(
+  "gravity",
+  "../fonts/gravity",
+  ("eot", "ttf", "svg", "woff2", "woff")
+) {
+  font-style: bold;
+  font-weight: 600;
+}

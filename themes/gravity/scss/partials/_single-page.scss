@@ -1,0 +1,10 @@
+.single-page {
+  section img:first-child {
+    @include gap(both, medium);
+    width: 440px;
+  }
+  div.row:nth-of-type(2) div {
+    @include gap(both, medium);
+    // column-width: 24em;
+  }
+}

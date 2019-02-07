@@ -103,7 +103,8 @@
     margin-bottom: $gap-small;
     border-radius: 50%;
     border: 4px solid $light-teal;
-    background: url(/user/themes/gravity/images/common/gilly.jpg) center / 100% no-repeat;
+    @include retina-image(170px, 170px, gillymeek, small, '/user/pages/01.home/_gilly/');
+    //background: url(/user/themes/gravity/images/common/gilly.jpg) center / 100% no-repeat;
   }
   h3 {
     padding-top: 11px;

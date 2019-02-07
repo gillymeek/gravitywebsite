@@ -8,7 +8,7 @@ nav {
     height: 32px;
     margin-right: 6px;
     position: relative;
-    top: 3px;
+    top: 0; //was 3px but looked slightly out of place
   }
   .top-bar-title {
     font-family: $logo-font-family;
