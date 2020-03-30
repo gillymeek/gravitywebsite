@@ -9,6 +9,8 @@ content:
             - _introduction
             - _gilly
             - _clients
+            - _virtual
+            - _vcourses
             - _formula
             - _courses
             - _quarterly

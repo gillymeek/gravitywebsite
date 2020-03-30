@@ -135,6 +135,55 @@
   @include retina-image(440px, 320px, formula-illustration-large, medium);
 }
 
+// Virtual
+#virtual {
+  @include gap(both, large)
+}
+
+#virtual-illustration {
+  margin: 0 auto;
+  @include breakpoint(large) {
+    margin: 15% auto 0 auto;
+  }
+  @include retina-image(290px, 215px, virtual-illustration, small);
+  @include retina-image(440px, 320px, virtual-illustration-large, medium);
+}
+
+// Vcourses
+
+#vcourses {
+  @include gap(both, large)
+  ul {
+    margin: 0;
+  }
+  li {
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+  }
+}
+#vcourse-1-illustration {
+  margin: 0 auto;
+  @include breakpoint(large) {
+    margin: 0 0 5% 0;
+  }
+  @include retina-image(290px, 215px, vcourse-1, small);
+  @include retina-image(290px, 215px, vcourse-1, medium);
+}
+
+#vcourse-2-illustration {
+  margin: 0 auto;
+  @include breakpoint(large) {
+    margin: 0 0 5% 0;
+  }
+  @include retina-image(290px, 215px, vcourse-2, small);
+  @include retina-image(290px, 215px, vcourse-2, medium);
+}
+
+
+
+
 // Browse Courses Segment
 
 #browsecourses {

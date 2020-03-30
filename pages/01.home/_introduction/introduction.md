@@ -1,5 +1,5 @@
 ---
-title: 'Management Training that is full of bright ideas'
+title: 'Virtual Management Training that is full of bright ideas'
 buttons:
     -
         text: 'Browse our courses'
@@ -14,4 +14,4 @@ buttons:
         datamode: 2
         target: _blank
 ---
-We deliver in-house management training courses and partner with you to select or design bespoke training for your organisation.
+We deliver virtual management training courses and partner with you to select or design bespoke training for your organisation.
