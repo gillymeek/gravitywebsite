@@ -5225,15 +5225,8 @@ nav .button:hover {
   padding-bottom: 60px;
 }
 
-#vcourses ul {
-  margin: 0;
-}
-
-#vcourses li {
-  margin: 0.5em 0 0 0;
-  padding: 0;
-  list-style: none;
-  font-weight: bold;
+#vcourses h5 {
+  margin-bottom: 15px;
 }
 
 #vcourse-1-illustration {
