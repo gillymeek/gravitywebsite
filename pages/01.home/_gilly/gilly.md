@@ -1,7 +1,7 @@
 ---
 title: Hello, I'm Gilly Meek
 ---
-I’m a coach and trainer, [with over fourteen years’ experience](https://uk.linkedin.com/in/gillymeek "Read more at my LinkedIn profile"). I founded Gravity eight years ago because I believed there was a better way to inspire and develop managers and leaders.
+I’m a coach and trainer, [with over eighteen years’ experience](https://uk.linkedin.com/in/gillymeek "Read more at my LinkedIn profile"). I founded Gravity eight years ago because I believed there was a better way to inspire and develop managers and leaders.
 
 Since then I have worked around the world with over a hundred different organisations in a wide range of sectors, including media, retail, finance, legal and hospitality.
 

@@ -14,4 +14,4 @@ buttons:
         datamode: 2
         target: _blank
 ---
-We deliver virtual management training courses and partner with you to select or design bespoke training for your organisation.
+We deliver virtual and face–to–face management training courses and partner with you to select or design bespoke training for your organisation.
