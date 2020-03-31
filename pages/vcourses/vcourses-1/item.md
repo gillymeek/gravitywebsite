@@ -1,5 +1,5 @@
 ---
-title: Managing Remotely Course
+title: Managing Remotely
 markdown:
   extra: true
 illustration: vcourse-1-illustration
