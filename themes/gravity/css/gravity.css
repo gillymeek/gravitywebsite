@@ -5220,13 +5220,26 @@ nav .button:hover {
   }
 }
 
-#vcourses {
+#vcourses .columns {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+#vcourses .columns:first-of-type {
+  padding-bottom: 0;
+}
+
 #vcourses h5 {
   margin-bottom: 15px;
+}
+
+#vcourses h2 {
+  color: #433C4F;
+  padding-top: 15px;
+}
+
+#vcourses h2::after {
+  background-color: #8D829F;
 }
 
 #vcourse-1-illustration {

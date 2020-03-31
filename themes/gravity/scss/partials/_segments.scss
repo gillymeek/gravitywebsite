@@ -152,9 +152,23 @@
 // Vcourses
 
 #vcourses {
-  @include gap(both, large)
+  .columns {
+    @include gap(both, large)
+    &:first-of-type {
+      padding-bottom: 0;
+    }
+  }
   h5 {
     margin-bottom: 15px;
+  }
+  h2 {
+    color: $dark-purple;
+    @include breakpoint(small) {
+      padding-top: $gap-small;
+    }
+  }
+  h2::after {
+    background-color: $light-purple;
   }
 }
 #vcourse-1-illustration {

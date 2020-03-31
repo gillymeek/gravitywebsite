@@ -4798,8 +4798,8 @@
 		"oA": 0,
 		"oAP": "/images/illustrations/vcourse-1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4809,8 +4809,8 @@
 		"oA": 0,
 		"oAP": "/images/illustrations/vcourse-1@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4820,8 +4820,8 @@
 		"oA": 0,
 		"oAP": "/images/illustrations/vcourse-2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4831,8 +4831,8 @@
 		"oA": 0,
 		"oAP": "/images/illustrations/vcourse-2@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

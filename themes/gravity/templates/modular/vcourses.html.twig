@@ -1,11 +1,13 @@
-<section class="white" id="vcourses">
+<section class="light-teal" id="vcourses">
   <div class="row">
   {% for vcourses in page.find('/vcourses').children %}
-    <div class="large-6 columns">
+<div class="large-6 columns">
       <div id="{{ vcourses.header.illustration }}"></div>
       <div class="large-text-left text-center">
         <h2 class="underline-large-left">{{ vcourses.title }}</h2>
-        {{ vcourses.content }}
+        <div class="text-left">
+          {{ vcourses.content }}
+        </div>
       </div>
     </div>
   {% endfor %}
